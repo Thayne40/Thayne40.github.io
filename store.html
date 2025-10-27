@@ -18,9 +18,10 @@
     nav a{color:var(--light);text-decoration:none;font-weight:600;transition:.3s;font-size:1rem;}
     nav a:hover{color:var(--primary);}
     @media(max-width:768px){.header-container{flex-direction:column;align-items:center;}nav{justify-content:center;flex-wrap:wrap;}}
-    .store-section{padding:8rem 10% 5rem;text-align:center;}
-    .store-section h1{color:var(--primary);font-size:2.5rem;margin-bottom:1rem;}
-    .store-section p{color:#ccc;font-size:1.1rem;margin-bottom:3rem;max-width:700px;margin-inline:auto;}
+    section{padding:8rem 10% 5rem;text-align:center;}
+    section h1{color:var(--primary);font-size:2.5rem;margin-bottom:1rem;}
+    section p{color:#ccc;font-size:1.1rem;margin-bottom:3rem;max-width:700px;margin-inline:auto;}
+    h2{color:var(--primary);font-size:1.8rem;margin:3rem 0 1rem;text-align:left;}
     .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
     .product-card{background:var(--gray);border-radius:15px;padding:1.5rem;transition:.3s;text-decoration:none;color:inherit;}
     .product-card:hover{transform:translateY(-10px);}
@@ -35,6 +36,7 @@
   </style>
 </head>
 <body>
+
 <header>
   <div class="header-container">
     <div class="logo-container">
@@ -50,11 +52,29 @@
   </div>
 </header>
 
-<section class="store-section">
+<section>
   <h1>Shop the Collection</h1>
-  <p>Performance meets design — apparel crafted for movement, precision, and presence.</p>
+  <p>Premium gear designed for performance, comfort, and style — built for the elite within.</p>
+
+  <h2>Tops</h2>
   <div class="product-grid">
-    <a href="performance-tee.html" class="product-card"><img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=600&q=80"><h3>Performance Tee</h3><p>Engineered for maximum comfort and endurance.</p><p class="price">$35.00</p><span class="btn">View Product</span></a>
-    <a href="training-shorts.html" class="product-card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"><h3>Training Shorts</h3><p>Lightweight and flexible for optimal performance.</p><p class="price">$40.00</p><span class="btn">View Product</span></a>
-    <a href="signature-hoodie.html" class="product-card"><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80"><h3>Signature Hoodie</h3><p>Premium comfort that transitions from gym to street.</p><p class="price">$60.00</p><span class="btn">View Product</span></a>
-    <a href
+    <a href="performance-tee.html" class="product-card"><img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=600&q=80"><h3>Performance Tee</h3><p>Everyday training essential.</p><p class="price">$35.00</p><span class="btn">View Product</span></a>
+    <a href="signature-hoodie.html" class="product-card"><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80"><h3>Signature Hoodie</h3><p>Luxury comfort for training and recovery.</p><p class="price">$60.00</p><span class="btn">View Product</span></a>
+    <a href="elite-tank.html" class="product-card"><img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3a3d?auto=format&fit=crop&w=600&q=80"><h3>Elite Tank</h3><p>Lightweight, breathable, and bold.</p><p class="price">$30.00</p><span class="btn">View Product</span></a>
+  </div>
+
+  <h2>Bottoms</h2>
+  <div class="product-grid">
+    <a href="training-shorts.html" class="product-card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"><h3>Training Shorts</h3><p>Move freely with performance stretch fabric.</p><p class="price">$40.00</p><span class="btn">View Product</span></a>
+    <a href="#" class="product-card"><img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=600&q=80"><h3>Performance Joggers</h3><p>Sleek fit, perfect for training or rest days.</p><p class="price">$55.00</p><span class="btn">View Product</span></a>
+  </div>
+
+  <h2>Footwear</h2>
+  <div class="product-grid">
+    <a href="#" class="product-card"><img src="https://images.unsplash.com/photo-1528701800489-20be7c1bca31?auto=format&fit=crop&w=600&q=80"><h3>Elite Trainers</h3><p>Support and grip designed for all workouts.</p><p class="price">$90.00</p><span class="btn">View Product</span></a>
+  </div>
+</section>
+
+<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
+</body>
+</html>
