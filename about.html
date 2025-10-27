@@ -6,231 +6,68 @@
   <title>About Us | Echelon Fits</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #007BFF;
-      --bg: #0f0f0f;
-      --light: #ffffff;
-      --gray: #1C1C1C;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--bg);
-      color: var(--light);
-      overflow-x: hidden;
-    }
-
-    /* HEADER */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
-
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 6%;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo {
-      height: 50px;
-      width: auto;
-      transition: transform 0.3s ease;
-    }
-
-    .logo:hover {
-      transform: scale(1.1);
-    }
-
-    .brand-name {
-      font-size: 1.6rem;
-      letter-spacing: 2px;
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    nav a {
-      color: var(--light);
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-      nav a {
-        margin: 0 0.8rem;
-        display: inline-block;
-      }
-    }
-
-    /* ABOUT SECTION */
-    .about-section {
-      padding: 8rem 10% 4rem;
-      text-align: center;
-    }
-
-    .about-section h1 {
-      color: var(--primary);
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .about-section p {
-      color: #ccc;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-    }
-
-    .mission {
-      background: var(--gray);
-      border-radius: 15px;
-      padding: 3rem 2rem;
-      margin-top: 3rem;
-    }
-
-    .mission h2 {
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    .values {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 4rem;
-    }
-
-    .value-card {
-      background: var(--gray);
-      border-radius: 15px;
-      padding: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .value-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .value-card h3 {
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 2rem 0;
-      font-size: 0.9rem;
-      opacity: 0.85;
-      color: #aaa;
-    }
-
-    footer span {
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 2.2rem;
-      background: var(--primary);
-      color: white;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #3399ff;
-    }
+    :root { --primary:#007BFF; --bg:#0f0f0f; --light:#fff; --gray:#1C1C1C; }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--light);}
+    header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.9);backdrop-filter:blur(10px);z-index:1000;padding:1rem 6%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.4);}
+    header h1{color:var(--primary);}
+    nav a{color:var(--light);margin-left:1.5rem;text-decoration:none;font-weight:600;transition:.3s;}
+    nav a:hover{color:var(--primary);}
+    .about-section{padding:8rem 10% 4rem;text-align:center;}
+    .about-section h1{color:var(--primary);font-size:2.5rem;margin-bottom:1rem;}
+    .about-section p{color:#ccc;font-size:1.1rem;line-height:1.8;max-width:800px;margin:0 auto 2rem;}
+    .mission{background:var(--gray);border-radius:15px;padding:3rem 2rem;margin-top:3rem;}
+    .mission h2{color:var(--primary);margin-bottom:1rem;}
+    .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:4rem;}
+    .value-card{background:var(--gray);border-radius:15px;padding:2rem;transition:.3s;}
+    .value-card:hover{transform:translateY(-10px);}
+    .value-card h3{color:var(--primary);margin-bottom:.5rem;}
+    footer{background:#000;text-align:center;padding:2rem 0;font-size:.9rem;color:#aaa;}
+    footer span{color:var(--primary);font-weight:600;}
+    .btn{display:inline-block;margin-top:2rem;padding:.8rem 2.2rem;background:var(--primary);color:#fff;border-radius:40px;text-decoration:none;font-weight:600;transition:.3s;}
+    .btn:hover{background:#3399ff;}
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="echelon-logo.png" alt="Echelon Fits Logo" class="logo">
-        </a>
-        <h1 class="brand-name">ECHELON FITS</h1>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#mission">Mission</a>
-        <a href="#values">Values</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<header>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="index.html"><img src="echelon-logo.png" alt="Echelon Fits Logo" style="height:50px;width:auto;"></a>
+    <h1>ECHELON FITS</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="about-section" id="about">
+  <h1>About Echelon Fits</h1>
+  <p>Founded on the belief that excellence is built through consistency, Echelon Fits empowers athletes and everyday individuals to become their best selves through fitness and design. Our brand fuses high-performance training with premium apparel to create a lifestyle of growth, discipline, and style.</p>
+
+  <div class="mission" id="mission">
+    <h2>Our Mission</h2>
+    <p>To redefine what it means to be elite — by providing a community, apparel, and training experience that inspires people to rise beyond their limits, inside and outside the gym.</p>
+    <a href="index.html#training" class="btn">Explore Our Training</a>
+  </div>
+
+  <div class="values" id="values">
+    <div class="value-card">
+      <h3>Discipline</h3>
+      <p>Consistency and effort are the foundation of success. Discipline drives results.</p>
     </div>
-  </header>
-
-  <!-- ABOUT CONTENT -->
-  <section class="about-section" id="about">
-    <h1>About Echelon Fits</h1>
-    <p>Founded on the belief that excellence is not just achieved — it’s built through consistency, Echelon Fits was created for those who demand more from themselves. We blend high-performance training with premium apparel, empowering athletes and everyday individuals alike to pursue the best version of themselves.</p>
-    <p>Our brand is more than fitness — it’s a mindset. Every rep, every stitch, every goal met reflects a pursuit of greatness. Whether you’re training in our gear or working with our coaches, you’re part of a movement dedicated to growth, discipline, and style.</p>
-
-    <div class="mission" id="mission">
-      <h2>Our Mission</h2>
-      <p>To redefine what it means to be elite — by providing a community, apparel, and training experience that inspires people to rise beyond their limits, inside and outside the gym.</p>
-      <a href="index.html#training" class="btn">Explore Our Training</a>
+    <div class="value-card">
+      <h3>Innovation</h3>
+      <p>Our gear and methods evolve with the athlete — built for performance, precision, and style.</p>
     </div>
-
-    <div class="values" id="values">
-      <div class="value-card">
-        <h3>Discipline</h3>
-        <p>We believe consistency and effort are the foundation of every success story. Discipline drives results.</p>
-      </div>
-      <div class="value-card">
-        <h3>Innovation</h3>
-        <p>Our gear and methods evolve with the athlete — built for performance, precision, and style.</p>
-      </div>
-      <div class="value-card">
-        <h3>Community</h3>
-        <p>We are stronger together. Echelon Fits fosters a culture where support, growth, and leadership thrive.</p>
-      </div>
+    <div class="value-card">
+      <h3>Community</h3>
+      <p>We’re stronger together. Echelon Fits fosters a culture where support, growth, and leadership thrive.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
-  </footer>
-
+<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
 </body>
 </html>
