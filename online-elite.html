@@ -5,8 +5,49 @@
 <title>Online Elite | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--primary:#007BFF;--bg:#0f0f0f;--light:#fff;--gray:#1C1C1C;}
+:root{--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--light);padding-top:100px;}
-header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.9);}
-.header-container{display:flex;justify
+body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,var(--bg1),var(--bg2));color:var(--text);padding-top:100px;animation:fadeIn 1.2s ease;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+header{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.9);box-shadow:0 2px 10px rgba(0,0,0,0.1);backdrop-filter:blur(10px);z-index:1000;}
+.header-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;flex-wrap:wrap;}
+.logo{height:50px;}
+.brand-name{color:var(--accent);font-weight:700;}
+nav{display:flex;gap:1.2rem;}
+nav a{color:var(--text);text-decoration:none;font-weight:600;}
+nav a:hover{color:var(--accent);}
+.banner{height:60vh;background:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
+.banner h1{background:rgba(255,255,255,0.7);padding:1rem 2rem;border-radius:15px;color:var(--accent);}
+section{padding:5rem 10%;text-align:center;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
+.gallery img:hover{transform:scale(1.05);}
+footer{background:#fff;text-align:center;padding:2rem 0;color:#888;font-size:.9rem;}
+footer span{color:var(--accent);}
+</style>
+</head>
+<body>
+<header>
+ <div class="header-container">
+   <div style="display:flex;align-items:center;gap:10px;">
+     <a href="index.html"><img src="echelon-logo.png" class="logo"></a><h1 class="brand-name">ECHELON FITS</h1>
+   </div>
+   <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="index.html#contact">Contact</a></nav>
+ </div>
+</header>
+
+<div class="banner"><h1>Online Elite</h1></div>
+
+<section>
+ <h2>Train Anywhere</h2>
+ <p>Join our elite virtual training community. Custom workouts and nutrition tracking delivered to you — no matter where you are.</p>
+ <div class="gallery">
+  <img src="https://images.unsplash.com/photo-1583454110559-21a6e88b49c5?auto=format&fit=crop&w=800&q=80">
+  <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=80">
+  <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80">
+ </div>
+</section>
+
+<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
+</body>
+</html>
