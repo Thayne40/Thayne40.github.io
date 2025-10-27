@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>About Us | Echelon Fits</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--primary:#007BFF;--bg:#0f0f0f;--light:#fff;--gray:#1C1C1C;}
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--light);padding-top:100px;}
-    header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.9);backdrop-filter:blur(10px);box-shadow:0 2px 10px rgba(0,0,0,.4);z-index:1000;}
-    .header-container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:1rem 6%;gap:1rem;}
-    .logo-container{display:flex;align-items:center;gap:10px;}
-    .logo{height:50px;}
-    .brand-name{font-size:1.5rem;color:var(--primary);font-weight:700;letter-spacing:2px;}
-    nav{display:flex;flex-wrap:wrap;gap:1.2rem;}
-    nav a{color:var(--light);text-decoration:none;font-weight:600;transition:.3s;}
-    nav a:hover{color:var(--primary);}
-    @media(max-width:768px){.header-container{flex-direction:column;align-items:center;}}
-
-    .banner{height:60vh;background:url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
-    .banner h1{background:rgba(0,0,0,.6);padding:1rem 2rem;border-radius:15px;color:var(--primary);font-size:2.8rem;}
-
-    section{padding:5rem 10%;text-align:center;}
-    section h2{color:var(--primary);font-size:2rem;margin-bottom:1rem;}
-    section p{color:#ccc;max-width:800px;margin:0 auto 2rem;line-height:1.8;}
-
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
-    .gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
-    .gallery img:hover{transform:scale(1.05);}
-    footer{background:#000;text-align:center;padding:2rem 0;color:#aaa;font-size:.9rem;}
-    footer span{color:var(--primary);font-weight:600;}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About Us | Echelon Fits</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,var(--bg1),var(--bg2));color:var(--text);padding-top:100px;animation:fadeIn 1.2s ease;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+header{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.9);box-shadow:0 2px 10px rgba(0,0,0,0.1);backdrop-filter:blur(10px);z-index:1000;}
+.header-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;flex-wrap:wrap;}
+.logo{height:50px;}
+.brand-name{color:var(--accent);font-weight:700;}
+nav{display:flex;gap:1.2rem;}
+nav a{color:var(--text);text-decoration:none;font-weight:600;}
+nav a:hover{color:var(--accent);}
+.banner{height:60vh;background:url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
+.banner h1{background:rgba(255,255,255,0.7);padding:1rem 2rem;border-radius:15px;color:var(--accent);}
+section{padding:5rem 10%;text-align:center;}
+h2{color:var(--accent);margin-bottom:1rem;}
+p{max-width:800px;margin:0 auto 2rem;line-height:1.8;color:#444;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
+.gallery img:hover{transform:scale(1.05);}
+footer{background:#fff;text-align:center;padding:2rem 0;color:#888;font-size:.9rem;}
+footer span{color:var(--accent);}
+</style>
 </head>
 <body>
 <header>
-  <div class="header-container">
-    <div class="logo-container">
-      <a href="index.html"><img src="echelon-logo.png" alt="Echelon Fits Logo" class="logo"></a>
-      <h1 class="brand-name">ECHELON FITS</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
+ <div class="header-container">
+   <div style="display:flex;align-items:center;gap:10px;">
+     <a href="index.html"><img src="echelon-logo.png" class="logo"></a><h1 class="brand-name">ECHELON FITS</h1>
+   </div>
+   <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="index.html#contact">Contact</a></nav>
+ </div>
 </header>
 
-<div class="banner"><h1>Our Mission</h1></div>
+<div class="banner"><h1>About Echelon Fits</h1></div>
 
 <section>
-  <h2>Who We Are</h2>
-  <p>Echelon Fits was built to empower athletes and everyday people to pursue greatness. We merge performance apparel with elite training to unlock the best version of yourself — mind, body, and drive.</p>
+  <h2>Our Mission</h2>
+  <p>Echelon Fits was founded to inspire individuals to push boundaries and pursue excellence. Our mission is to blend premium fitness apparel with elite-level training culture — helping you look and perform your best.</p>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1571019613576-2b22c7f1b6e1?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1571019613914-85f342c2b2d6?auto=format&fit=crop&w=800&q=80">
     <img src="https://images.unsplash.com/photo-1583454110559-21a6e88b49c5?auto=format&fit=crop&w=800&q=80">
-    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1603079847730-4f0742a74b19?auto=format&fit=crop&w=800&q=80">
   </div>
 </section>
 
