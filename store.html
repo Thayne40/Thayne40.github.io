@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store | Echelon Fits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #007BFF;
+      --bg: #0f0f0f;
+      --light: #ffffff;
+      --gray: #1C1C1C;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg);
+      color: var(--light);
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 6%;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+
+    .brand-name {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    nav a {
+      color: var(--light);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* STORE SECTION */
+    .store-section {
+      padding: 8rem 10% 5rem;
+      text-align: center;
+    }
+
+    .store-section h1 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .store-section p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: var(--gray);
+      border-radius: 15px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-card img {
+      border-radius: 10px;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card p {
+      color: #bbb;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-weight: 700;
+      color: var(--light);
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #3399ff;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      opacity: 0.85;
+      color: #aaa;
+    }
+
+    footer span {
+      color: var(--primary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="index.html"><img src="echelon-logo.png" alt="Echelon Fits Logo" class="logo"></a>
+        <h1 class="brand-name">ECHELON FITS</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="store.html">Store</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- STORE CONTENT -->
+  <section class="store-section">
+    <h1>Shop the Collection</h1>
+    <p>Our apparel is built for performance, precision, and presence — designed to move with you and inspire the elite within.</p>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=600&q=80" alt="Performance Tee">
+        <h3>Performance Tee</h3>
+        <p>Engineered for maximum comfort and endurance in every session.</p>
+        <p class="price">$35.00</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Training Shorts">
+        <h3>Training Shorts</h3>
+        <p>Lightweight and flexible for optimal performance in any environment.</p>
+        <p class="price">$40.00</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" alt="Hoodie">
+        <h3>Signature Hoodie</h3>
+        <p>Premium comfort and style that transitions from gym to street.</p>
+        <p class="price">$60.00</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3a3d?auto=format&fit=crop&w=600&q=80" alt="Tank Top">
+        <h3>Elite Tank</h3>
+        <p>Sleek, breathable, and ready for your toughest workouts.</p>
+        <p class="price">$30.00</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
+  </footer>
+
+</body>
+</html>
