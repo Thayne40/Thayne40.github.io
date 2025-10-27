@@ -3,95 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Echelon Fit | Gym & Apparel</title>
+  <title>Echelon Fits | Built for the Elite Within</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #007BFF;
+      --bg: #0f0f0f;
+      --light: #ffffff;
+      --gray: #1C1C1C;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background-color: #0f0f0f;
-      color: white;
+      background-color: var(--bg);
+      color: var(--light);
       overflow-x: hidden;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 5%;
+      padding: 1.5rem 6%;
       background: rgba(0, 0, 0, 0.85);
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 100;
     }
+
     header h1 {
-      letter-spacing: 2px;
-      color: #e91e63;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      font-size: 1.5rem;
     }
+
     nav a {
-      color: white;
+      color: var(--light);
       margin-left: 1.5rem;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s;
     }
+
     nav a:hover {
-      color: #e91e63;
+      color: var(--primary);
     }
+
     .hero {
       height: 100vh;
-      background: url('https://images.unsplash.com/photo-1571019613914-85f342c1d4b1?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1579758629934-0957b76f06ef?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
       padding: 0 2rem;
     }
+
     .hero h2 {
       font-size: 3rem;
       max-width: 700px;
       margin-bottom: 1rem;
     }
+
     .hero p {
       font-size: 1.2rem;
       max-width: 600px;
       margin-bottom: 2rem;
+      color: #d1d1d1;
     }
+
     .btn {
-      padding: 0.75rem 2rem;
-      background: #e91e63;
+      padding: 0.8rem 2.2rem;
+      background: var(--primary);
       border: none;
       color: white;
       font-weight: 600;
-      border-radius: 30px;
+      border-radius: 40px;
       cursor: pointer;
       text-decoration: none;
       transition: background 0.3s;
     }
+
     .btn:hover {
-      background: #ff4f8b;
+      background: #3399ff;
     }
+
     section {
       padding: 5rem 10%;
       text-align: center;
     }
-    .services, .products, .invest {
+
+    section h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
-      margin-top: 3rem;
     }
+
     .card {
-      background: #1a1a1a;
+      background: var(--gray);
       border-radius: 15px;
       padding: 2rem;
       transition: transform 0.3s;
     }
+
     .card:hover {
       transform: translateY(-10px);
     }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #bbb;
+    }
+
     footer {
       background: #000;
       text-align: center;
@@ -99,80 +150,93 @@
       font-size: 0.9rem;
       opacity: 0.8;
     }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Echelon Fit</h1>
+    <h1>ECHELON FITS</h1>
     <nav>
-      <a href="#services">Training</a>
-      <a href="#products">Apparel</a>
+      <a href="#training">Training</a>
+      <a href="#apparel">Apparel</a>
       <a href="#invest">Invest</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Build Your Strength. Define Your Style.</h2>
-    <p>Elite gym training & apparel built for those who never quit. Train harder, look sharper, live stronger.</p>
-    <a href="#services" class="btn">Join the Movement</a>
+    <h2>Built for the Elite Within</h2>
+    <p>Welcome to Echelon Fits — a new era of performance and style. Redefine your limits, refine your image.</p>
+    <a href="#training" class="btn">Join the Movement</a>
   </section>
 
-  <section id="services">
-    <h2>Personal Training & Programs</h2>
-    <div class="services">
+  <section id="training">
+    <h2>Training Programs</h2>
+    <p>Our elite coaching programs are designed to help you push past boundaries and perform at your highest level — both in and out of the gym.</p>
+    <div class="cards">
       <div class="card">
         <h3>1-on-1 Coaching</h3>
-        <p>Customized workout plans designed to meet your specific fitness goals with elite coaching guidance.</p>
+        <p>Personalized programs built around your goals, lifestyle, and drive. Progress is tracked and celebrated every step of the way.</p>
       </div>
       <div class="card">
-        <h3>Group Classes</h3>
-        <p>High-energy group sessions that challenge and motivate you in a team-focused environment.</p>
+        <h3>Group Training</h3>
+        <p>Train in a powerful community that fuels growth. High-intensity group sessions that deliver results and motivation.</p>
       </div>
       <div class="card">
-        <h3>Online Training</h3>
-        <p>Work with our coaches remotely with custom training plans, video check-ins, and results tracking.</p>
+        <h3>Online Elite</h3>
+        <p>Train with Echelon Fits anywhere in the world. Video check-ins, performance feedback, and custom plans.</p>
       </div>
     </div>
   </section>
 
-  <section id="products">
+  <section id="apparel">
     <h2>Apparel Collection</h2>
-    <div class="products">
+    <p>Performance meets design. Explore apparel crafted for movement, precision, and presence — the uniform of the elite.</p>
+    <div class="cards">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=600&q=80" width="100%" style="border-radius:10px;">
+        <img src="https://images.unsplash.com/photo-1593032465171-8b72e0e3b8c7?auto=format&fit=crop&w=600&q=80" alt="Athletic Shirt">
         <h3>Performance Tee</h3>
-        <p>Breathable, durable, and made for motion.</p>
+        <p>Engineered for breathability and movement. Built for your grind.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" width="100%" style="border-radius:10px;">
+        <img src="https://images.unsplash.com/photo-1535053535015-6e48a0f60a06?auto=format&fit=crop&w=600&q=80" alt="Workout Shorts">
         <h3>Training Shorts</h3>
-        <p>Lightweight design with built-in flexibility and comfort.</p>
+        <p>Lightweight comfort with durable stretch. Perfect for any session.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" width="100%" style="border-radius:10px;">
-        <h3>Grit Hoodie</h3>
-        <p>Premium comfort with a bold athletic look for on or off the clock.</p>
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231693?auto=format&fit=crop&w=600&q=80" alt="Hoodie">
+        <h3>Signature Hoodie</h3>
+        <p>Premium comfort meets minimalist design. Elevate your everyday wear.</p>
       </div>
     </div>
   </section>
 
   <section id="invest">
-    <h2>Partner With Us</h2>
-    <p>Join the fastest-growing hybrid brand in fitness and apparel. Invest in the future of athletic innovation.</p>
+    <h2>Invest in the Future</h2>
+    <p>Echelon Fits is not just a brand — it’s a movement. Partner with us and become part of the next generation of fitness innovation and apparel excellence.</p>
     <a href="#contact" class="btn">Get in Touch</a>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@gritathletics.com" style="color:#e91e63;">info@gritathletics.com</a></p>
+    <p>For coaching inquiries, brand partnerships, or investment opportunities, reach out below.</p>
+    <p>Email: <a href="mailto:info@echelonfits.com" style="color: var(--primary); text-decoration:none;">info@echelonfits.com</a></p>
   </section>
 
   <footer>
-    © 2025 GRIT Athletics. All Rights Reserved.
+    © 2025 Echelon Fits. Built for the Elite Within.
   </footer>
 
 </body>
 </html>
-
