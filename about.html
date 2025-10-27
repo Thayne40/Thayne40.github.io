@@ -12,25 +12,25 @@
     header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.9);backdrop-filter:blur(10px);box-shadow:0 2px 10px rgba(0,0,0,.4);z-index:1000;}
     .header-container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:1rem 6%;gap:1rem;}
     .logo-container{display:flex;align-items:center;gap:10px;}
-    .logo{height:50px;width:auto;}
-    .brand-name{font-size:1.5rem;color:var(--primary);font-weight:700;letter-spacing:2px;white-space:nowrap;}
-    nav{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:flex-end;flex:1;}
-    nav a{color:var(--light);text-decoration:none;font-weight:600;transition:.3s;font-size:1rem;}
+    .logo{height:50px;}
+    .brand-name{font-size:1.5rem;color:var(--primary);font-weight:700;letter-spacing:2px;}
+    nav{display:flex;flex-wrap:wrap;gap:1.2rem;}
+    nav a{color:var(--light);text-decoration:none;font-weight:600;transition:.3s;}
     nav a:hover{color:var(--primary);}
-    @media(max-width:768px){.header-container{flex-direction:column;align-items:center;}nav{justify-content:center;flex-wrap:wrap;}}
-    .about-section{padding:8rem 10% 4rem;text-align:center;}
-    .about-section h1{color:var(--primary);font-size:2.5rem;margin-bottom:1rem;}
-    .about-section p{color:#ccc;font-size:1.1rem;line-height:1.8;max-width:800px;margin:0 auto 2rem;}
-    .mission{background:var(--gray);border-radius:15px;padding:3rem 2rem;margin-top:3rem;}
-    .mission h2{color:var(--primary);margin-bottom:1rem;}
-    .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:4rem;}
-    .value-card{background:var(--gray);border-radius:15px;padding:2rem;transition:.3s;}
-    .value-card:hover{transform:translateY(-10px);}
-    .value-card h3{color:var(--primary);margin-bottom:.5rem;}
-    footer{background:#000;text-align:center;padding:2rem 0;font-size:.9rem;color:#aaa;}
+    @media(max-width:768px){.header-container{flex-direction:column;align-items:center;}}
+
+    .banner{height:60vh;background:url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
+    .banner h1{background:rgba(0,0,0,.6);padding:1rem 2rem;border-radius:15px;color:var(--primary);font-size:2.8rem;}
+
+    section{padding:5rem 10%;text-align:center;}
+    section h2{color:var(--primary);font-size:2rem;margin-bottom:1rem;}
+    section p{color:#ccc;max-width:800px;margin:0 auto 2rem;line-height:1.8;}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+    .gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
+    .gallery img:hover{transform:scale(1.05);}
+    footer{background:#000;text-align:center;padding:2rem 0;color:#aaa;font-size:.9rem;}
     footer span{color:var(--primary);font-weight:600;}
-    .btn{display:inline-block;margin-top:2rem;padding:.8rem 2.2rem;background:var(--primary);color:#fff;border-radius:40px;text-decoration:none;font-weight:600;transition:.3s;}
-    .btn:hover{background:#3399ff;}
   </style>
 </head>
 <body>
@@ -41,26 +41,20 @@
       <h1 class="brand-name">ECHELON FITS</h1>
     </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="store.html">Store</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="index.html#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="about-section">
-  <h1>About Echelon Fits</h1>
-  <p>Echelon Fits was built for those who refuse mediocrity — athletes and creators driven by discipline, innovation, and community. We merge training and fashion to build a lifestyle of growth, precision, and excellence.</p>
-  <div class="mission">
-    <h2>Our Mission</h2>
-    <p>To redefine what it means to be elite by offering training, apparel, and community that help you push past your limits.</p>
-    <a href="index.html#training" class="btn">Explore Training</a>
-  </div>
-  <div class="values">
-    <div class="value-card"><h3>Discipline</h3><p>Every achievement starts with consistency and focus.</p></div>
-    <div class="value-card"><h3>Innovation</h3><p>We evolve with the athlete, bringing modern design and performance.</p></div>
-    <div class="value-card"><h3>Community</h3><p>We’re stronger together — driven by mutual support and growth.</p></div>
+<div class="banner"><h1>Our Mission</h1></div>
+
+<section>
+  <h2>Who We Are</h2>
+  <p>Echelon Fits was built to empower athletes and everyday people to pursue greatness. We merge performance apparel with elite training to unlock the best version of yourself — mind, body, and drive.</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1571019613576-2b22c7f1b6e1?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1583454110559-21a6e88b49c5?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80">
   </div>
 </section>
 
