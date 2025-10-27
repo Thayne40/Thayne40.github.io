@@ -6,138 +6,59 @@
   <title>1-on-1 Coaching | Echelon Fits</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #007BFF;
-      --bg: #0f0f0f;
-      --light: #ffffff;
-      --gray: #1C1C1C;
-    }
+    :root{--primary:#007BFF;--bg:#0f0f0f;--light:#fff;--gray:#1C1C1C;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--light);padding-top:100px;}
+    header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.9);backdrop-filter:blur(10px);box-shadow:0 2px 10px rgba(0,0,0,.4);z-index:1000;}
+    .header-container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:1rem 6%;gap:1rem;}
+    .logo-container{display:flex;align-items:center;gap:10px;}
+    .logo{height:50px;width:auto;}
+    .brand-name{font-size:1.5rem;color:var(--primary);font-weight:700;letter-spacing:2px;white-space:nowrap;}
+    nav{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:flex-end;flex:1;}
+    nav a{color:var(--light);text-decoration:none;font-weight:600;transition:.3s;font-size:1rem;}
+    nav a:hover{color:var(--primary);}
+    @media(max-width:768px){.header-container{flex-direction:column;align-items:center;}nav{justify-content:center;flex-wrap:wrap;}}
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background: var(--bg);
-      color: var(--light);
-    }
+    .hero{height:60vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1594737625785-c02a09b0a3c2?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;}
+    .hero h1{font-size:3rem;color:var(--primary);margin-bottom:1rem;}
+    .hero p{max-width:600px;color:#ddd;}
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.9);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      padding: 1rem 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
-
-    header h1 {
-      color: var(--primary);
-      font-size: 1.5rem;
-    }
-
-    nav a {
-      color: var(--light);
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    .hero {
-      height: 70vh;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://images.unsplash.com/photo-1599058917212-d750089bc07a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .hero h2 {
-      font-size: 2.8rem;
-      color: var(--light);
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      color: #ddd;
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    section {
-      padding: 5rem 10%;
-      text-align: center;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 2.2rem;
-      background: var(--primary);
-      border-radius: 40px;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #3399ff;
-    }
-
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 2rem 0;
-      font-size: 0.9rem;
-      color: #aaa;
-      opacity: 0.85;
-    }
-
-    footer span {
-      color: var(--primary);
-      font-weight: 600;
-    }
+    .section{padding:5rem 10%;text-align:center;}
+    .section h2{color:var(--primary);font-size:2rem;margin-bottom:1rem;}
+    .section p{color:#ccc;line-height:1.8;max-width:800px;margin:0 auto 2rem;}
+    .btn{padding:.8rem 2rem;background:var(--primary);color:#fff;border-radius:40px;text-decoration:none;font-weight:600;transition:.3s;}
+    .btn:hover{background:#3399ff;}
+    footer{background:#000;text-align:center;padding:2rem 0;color:#aaa;font-size:.9rem;}
+    footer span{color:var(--primary);font-weight:600;}
   </style>
 </head>
 <body>
-
 <header>
-  <h1>ECHELON FITS</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="store.html">Store</a>
-    <a href="about.html">About</a>
-  </nav>
+  <div class="header-container">
+    <div class="logo-container">
+      <a href="index.html"><img src="echelon-logo.png" alt="Echelon Fits Logo" class="logo"></a>
+      <h1 class="brand-name">ECHELON FITS</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="store.html">Store</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<div class="hero">
-  <div>
-    <h2>1-on-1 Coaching</h2>
-    <p>Personalized, high-impact training tailored to your goals, schedule, and lifestyle. Work directly with our elite trainers to push beyond limits.</p>
-  </div>
-</div>
-
-<section>
-  <h2>What You Get</h2>
-  <p>✔ Customized workout programs<br>✔ Nutritional guidance<br>✔ Weekly performance tracking<br>✔ Mental and physical coaching</p>
-  <a href="#" class="btn">Book a Session</a>
+<section class="hero">
+  <h1>1-on-1 Coaching</h1>
+  <p>Elite personal training tailored for your goals, body, and mindset.</p>
 </section>
 
-<footer>
-  © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
-</footer>
+<section class="section">
+  <h2>What You’ll Get</h2>
+  <p>Exclusive one-on-one coaching designed to elevate your performance. You’ll receive a customized program, progress tracking, nutrition guidance, and mindset coaching from elite trainers.</p>
+  <a href="mailto:info@echelonfits.com" class="btn">Apply for Coaching</a>
+</section>
 
+<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
 </body>
 </html>
