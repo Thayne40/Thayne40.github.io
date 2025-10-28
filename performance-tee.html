@@ -6,6 +6,14 @@
 <title>Performance Tee | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+body{
+ background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
+ background-size:400% 400%;
+ animation:shine 15s ease infinite;
+}
+@keyframes shine{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+</style>
 </head>
 <body>
 <header>
@@ -23,12 +31,16 @@
  </div>
 </header>
 
-<div class="banner" style="height:45vh;background:url('images/gym6.jpg') center/cover no-repeat;">
-  <h1>Performance Tee</h1>
+<div class="banner" style="height:45vh;background:url('images/gym6.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
+ <h1>Performance Tee</h1>
 </div>
 
 <section>
- <p>Designed for elite athletes, the Performance Tee delivers exceptional comfort, flexibility, and breathability for every workout. Crafted with lightweight moisture-wicking fabric that keeps you cool under pressure.</p>
+ <p>The Performance Tee delivers comfort, flexibility, and breathability for any workout. Lightweight, moisture-wicking fabric keeps you cool under pressure.</p>
+ <div class="gallery">
+  <img src="images/gym1.jpg" alt="Performance Workout" onerror="this.src='images/echelon-logo.png'">
+  <img src="images/gym2.jpg" alt="Tee Training" onerror="this.src='images/echelon-logo.png'">
+ </div>
  <a href="thank-you.html" class="btn">Buy Now</a>
 </section>
 
