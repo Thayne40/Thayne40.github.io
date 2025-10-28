@@ -6,6 +6,18 @@
 <title>Store | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css">
+<style>
+body{
+  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
+  background-size:400% 400%;
+  animation:shine 15s ease infinite;
+}
+@keyframes shine{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+</style>
 </head>
 <body>
 <header>
@@ -23,16 +35,16 @@
  </div>
 </header>
 
-<div class="banner" style="height:45vh;background:url('images/gym5.jpg') center/cover no-repeat;">
+<div class="banner" style="height:45vh;background:url('images/gym5.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
   <h1>Shop Echelon Fits</h1>
 </div>
 
 <section>
  <div class="products">
-  <div class="card"><img src="images/gym6.jpg" alt="Performance Tee"><h3>Performance Tee</h3><p>Lightweight. Durable. Made for results.</p><a href="performance-tee.html" class="btn">View</a></div>
-  <div class="card"><img src="images/gym7.jpg" alt="Training Shorts"><h3>Training Shorts</h3><p>Engineered comfort for every movement.</p><a href="training-shorts.html" class="btn">View</a></div>
-  <div class="card"><img src="images/gym8.jpg" alt="Signature Hoodie"><h3>Signature Hoodie</h3><p>Soft. Sleek. Built for all-day style.</p><a href="signature-hoodie.html" class="btn">View</a></div>
-  <div class="card"><img src="images/gym9.jpg" alt="Elite Tank"><h3>Elite Tank</h3><p>Minimal design, maximum performance.</p><a href="elite-tank.html" class="btn">View</a></div>
+  <div class="card"><img src="images/gym6.jpg" alt="Performance Tee" onerror="this.src='images/echelon-logo.png'"><h3>Performance Tee</h3><p>Lightweight. Durable. Made for results.</p><a href="performance-tee.html" class="btn">View</a></div>
+  <div class="card"><img src="images/gym7.jpg" alt="Training Shorts" onerror="this.src='images/echelon-logo.png'"><h3>Training Shorts</h3><p>Engineered comfort for every movement.</p><a href="training-shorts.html" class="btn">View</a></div>
+  <div class="card"><img src="images/gym8.jpg" alt="Signature Hoodie" onerror="this.src='images/echelon-logo.png'"><h3>Signature Hoodie</h3><p>Soft. Sleek. Built for all-day style.</p><a href="signature-hoodie.html" class="btn">View</a></div>
+  <div class="card"><img src="images/gym9.jpg" alt="Elite Tank" onerror="this.src='images/echelon-logo.png'"><h3>Elite Tank</h3><p>Minimal design, maximum performance.</p><a href="elite-tank.html" class="btn">View</a></div>
  </div>
 </section>
 
