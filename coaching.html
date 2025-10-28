@@ -6,6 +6,18 @@
 <title>1-on-1 Coaching | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+body{
+  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
+  background-size:400% 400%;
+  animation:shine 15s ease infinite;
+}
+@keyframes shine{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+</style>
 </head>
 <body>
 <header>
@@ -23,13 +35,17 @@
  </div>
 </header>
 
-<div class="banner" style="height:50vh;background:url('images/gym11.jpg') center/cover no-repeat;">
+<div class="banner" style="height:50vh;background:url('images/gym11.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
   <h1>1-on-1 Coaching</h1>
 </div>
 
 <section>
- <p>Our personalized coaching program gives you direct, tailored guidance from our elite trainers. Each session is designed to meet your goals — from building strength to refining form — using proven methods that deliver results.</p>
- <a href="thank-you.html" class="btn">Get Started</a>
+ <p>Our personalized coaching program gives you direct, tailored guidance from elite trainers. Each session targets your goals — from strength to performance — with proven methods that deliver results.</p>
+ <div class="gallery">
+   <img src="images/gym1.jpg" alt="Personal Training" onerror="this.src='images/echelon-logo.png'">
+   <img src="images/gym2.jpg" alt="Form Coaching" onerror="this.src='images/echelon-logo.png'">
+ </div>
+ <a href="thank-you.html" class="btn">Start Now</a>
 </section>
 
 <footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
