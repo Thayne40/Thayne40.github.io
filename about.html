@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <title>About Us | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
+<style>
+body{
+  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
+  background-size:400% 400%;
+  animation:shine 15s ease infinite;
+}
+@keyframes shine{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+</style>
 </head>
 <body>
 <header>
@@ -23,7 +35,7 @@
  </div>
 </header>
 
-<div class="banner" style="height:60vh;background:url('images/gym4.jpg') center/cover no-repeat;">
+<div class="banner" style="height:60vh;background:url('images/gym4.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
   <h1>About Echelon Fits</h1>
 </div>
 
