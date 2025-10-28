@@ -6,23 +6,81 @@
 <title>About Us | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 <style>
-:root {--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
+:root {
+  --accent:#e88cae;
+  --bg1:#f7f7f7;
+  --bg2:#ececec;
+  --text:#222;
+}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,var(--bg1),var(--bg2));color:var(--text);padding-top:100px;animation:fadeIn 1.2s ease;}
+body {
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(to bottom,var(--bg1),var(--bg2));
+  color:var(--text);
+  padding-top:100px;
+  animation:fadeIn 1.2s ease;
+}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-header{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.9);box-shadow:0 2px 10px rgba(0,0,0,0.1);backdrop-filter:blur(10px);z-index:1000;}
-.header-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;flex-wrap:wrap;}
+header {
+  position:fixed;top:0;width:100%;
+  background:rgba(255,255,255,0.9);
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+.header-container {
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 6%;flex-wrap:wrap;
+}
 .logo{height:50px;}
 .brand-name{color:var(--accent);font-weight:700;}
 nav{display:flex;gap:1.2rem;}
 nav a{color:var(--text);text-decoration:none;font-weight:600;}
 nav a:hover{color:var(--accent);}
-.banner{height:60vh;background:url('images/gym4.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
-.banner h1{background:rgba(255,255,255,0.7);padding:1rem 2rem;border-radius:15px;color:var(--accent);}
-section{padding:5rem 10%;text-align:center;}
-h2{color:var(--accent);margin-bottom:1rem;}
-p{max-width:800px;margin:0 auto 2rem;line-height:1.8;color:#444;}
-footer{background:#fff;text-align:center;padding:2rem 0;color:#888;font-size:.9rem;}
+.banner {
+  height:60vh;
+  background:url('images/gym4.jpg') center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;
+}
+.banner h1 {
+  background:rgba(255,255,255,0.7);
+  padding:1rem 2rem;border-radius:15px;
+  color:var(--accent);
+}
+section {
+  padding:5rem 10%;text-align:center;
+}
+h2 {color:var(--accent);margin-bottom:1rem;}
+p {
+  max-width:800px;
+  margin:0 auto 2rem;
+  line-height:1.8;
+  color:#444;
+}
+.btn {
+  display:inline-block;
+  background:rgba(232,140,174,0.35);
+  border:1px solid rgba(255,255,255,0.3);
+  backdrop-filter:blur(6px);
+  color:#fff;
+  padding:0.9rem 2rem;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  transition:all 0.3s ease;
+}
+.btn:hover {
+  background:rgba(232,140,174,0.6);
+  transform:scale(1.07);
+  box-shadow:0 0 20px rgba(232,140,174,0.4);
+}
+footer {
+  background:#fff;
+  text-align:center;
+  padding:2rem 0;
+  color:#888;
+  font-size:.9rem;
+}
 footer span{color:var(--accent);}
 </style>
 </head>
@@ -37,7 +95,7 @@ footer span{color:var(--accent);}
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="store.html">Store</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="contact.html">Contact</a>
   </nav>
  </div>
 </header>
@@ -51,7 +109,7 @@ footer span{color:var(--accent);}
   <h2>Our Vision</h2>
   <p>To inspire a culture of strength, excellence, and determination. Whether you’re an athlete, entrepreneur, or creator, Echelon Fits represents the drive to rise higher every day.</p>
 
-  <img src="images/gym5.jpg" alt="Athlete Training" style="width:100%;max-width:700px;border-radius:12px;margin-top:2rem;">
+  <a href="store.html" class="btn">Shop Our Collection</a>
 </section>
 
 <footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
