@@ -2,108 +2,91 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Thank You | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --accent: #e88cae;
-  --bg1: #f7f7f7;
-  --bg2: #ececec;
-  --text: #222;
+:root{--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(to bottom,var(--bg1),var(--bg2));
+  color:var(--text);
+  padding-top:100px;
+  animation:fadeIn 1s ease;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, var(--bg1), var(--bg2));
-  color: var(--text);
-  padding-top: 100px;
-  animation: fadeIn 1.2s ease;
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+header{
+  position:fixed;top:0;width:100%;
+  background:rgba(255,255,255,0.9);
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  backdrop-filter:blur(10px);
+  z-index:1000;
 }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-header {
-  position: fixed;
-  top: 0; width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
+.header-container{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 6%;
 }
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 6%;
-  flex-wrap: wrap;
+.logo{height:50px;}
+.brand-name{color:var(--accent);font-weight:700;}
+nav{display:flex;gap:1.2rem;}
+nav a{color:var(--text);text-decoration:none;font-weight:600;}
+nav a:hover{color:var(--accent);}
+main{
+  padding:5rem 10%;
+  text-align:center;
 }
-.logo { height: 50px; }
-.brand-name { color: var(--accent); font-weight: 700; }
-nav { display: flex; gap: 1.2rem; }
-nav a { color: var(--text); text-decoration: none; font-weight: 600; }
-nav a:hover { color: var(--accent); }
-
-section {
-  padding: 5rem 10%;
-  text-align: center;
+h1{
+  color:var(--accent);
+  font-size:2.2rem;
+  margin-bottom:1rem;
 }
-h1 {
-  color: var(--accent);
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+p{
+  color:#444;
+  font-size:1.1rem;
+  margin-bottom:2rem;
 }
-p {
-  color: #444;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.btn{
+  background:var(--accent);
+  color:#fff;
+  padding:0.9rem 2rem;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
 }
-.btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  padding: 1rem 2.5rem;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background .3s;
+.btn:hover{background:#f0a9c0;}
+footer{
+  background:#fff;
+  text-align:center;
+  padding:2rem 0;
+  color:#888;
+  font-size:.9rem;
 }
-.btn:hover { background: #f0a9c0; }
-
-footer {
-  background: #fff;
-  text-align: center;
-  padding: 2rem 0;
-  color: #888;
-  font-size: .9rem;
-}
-footer span { color: var(--accent); }
+footer span{color:var(--accent);}
 </style>
 </head>
-
 <body>
 <header>
  <div class="header-container">
   <div style="display:flex;align-items:center;gap:10px;">
-    <a href="index.html"><img src="echelon-logo.png" class="logo"></a>
+    <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Logo"></a>
     <h1 class="brand-name">ECHELON FITS</h1>
   </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="store.html">Store</a>
-    <a href="index.html#contact">Contact</a>
   </nav>
  </div>
 </header>
 
-<section>
-  <h1>Thank You!</h1>
-  <p>Your submission has been received. We appreciate your interest in Echelon Fits — where strength meets style.</p>
-  <a href="index.html" class="btn">Return to Home</a>
-</section>
+<main>
+  <h1>Thank You for Your Purchase!</h1>
+  <p>Your order has been received. You’ll get a confirmation email soon.  
+     We’re excited to have you as part of the <strong>Echelon Fits</strong> community — built for the elite within.</p>
+  <a href="store.html" class="btn">Back to Store</a>
+</main>
 
-<footer>
-  © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
-</footer>
+<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
 </body>
 </html>
