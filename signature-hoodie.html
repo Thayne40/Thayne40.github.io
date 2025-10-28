@@ -6,30 +6,38 @@
 <title>Signature Hoodie | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+body{background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);background-size:400% 400%;animation:shine 15s ease infinite;}
+@keyframes shine{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+</style>
 </head>
 <body>
 <header>
  <div class="header-container">
-  <div style="display:flex;align-items:center;gap:10px;">
-   <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
-   <h1 class="brand-name">ECHELON FITS</h1>
-  </div>
-  <nav>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="store.html">Store</a>
-   <a href="contact.html">Contact</a>
-  </nav>
+   <div style="display:flex;align-items:center;gap:10px;">
+     <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
+     <h1 class="brand-name">ECHELON FITS</h1>
+   </div>
+   <nav>
+     <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="store.html">Store</a>
+     <a href="contact.html">Contact</a>
+   </nav>
  </div>
 </header>
 
-<div class="banner" style="height:45vh;background:url('images/gym8.jpg') center/cover no-repeat;">
+<div class="banner" style="height:45vh;background:url('images/gym8.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
   <h1>Signature Hoodie</h1>
 </div>
 
 <section>
- <p>The Signature Hoodie redefines comfort and style. Built with ultra-soft fleece and a minimalist design, it transitions seamlessly from your workout to your everyday look.</p>
- <a href="thank-you.html" class="btn">Buy Now</a>
+  <p>The Signature Hoodie pairs style and comfort with premium fleece and a minimalist design that keeps you warm while you move through your day.</p>
+  <div class="gallery">
+    <img src="images/gym5.jpg" alt="Hoodie Comfort" onerror="this.src='images/echelon-logo.png'">
+    <img src="images/gym6.jpg" alt="Lifestyle Hoodie" onerror="this.src='images/echelon-logo.png'">
+  </div>
+  <a href="thank-you.html" class="btn">Buy Now</a>
 </section>
 
 <footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
