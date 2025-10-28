@@ -6,6 +6,18 @@
 <title>Group Training | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+body{
+  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
+  background-size:400% 400%;
+  animation:shine 15s ease infinite;
+}
+@keyframes shine{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+</style>
 </head>
 <body>
 <header>
@@ -23,13 +35,17 @@
  </div>
 </header>
 
-<div class="banner" style="height:50vh;background:url('images/gym12.jpg') center/cover no-repeat;">
+<div class="banner" style="height:50vh;background:url('images/gym12.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
   <h1>Group Training</h1>
 </div>
 
 <section>
- <p>Train with others who share your same mindset. Our group training combines motivation, accountability, and competition — building camaraderie while pushing you to your limits.</p>
- <a href="thank-you.html" class="btn">Join a Session</a>
+ <p>Train alongside driven individuals who share your intensity. Group sessions build accountability, community, and unmatched motivation — pushing you to reach higher together.</p>
+ <div class="gallery">
+   <img src="images/gym3.jpg" alt="Group Lifting" onerror="this.src='images/echelon-logo.png'">
+   <img src="images/gym4.jpg" alt="Team Conditioning" onerror="this.src='images/echelon-logo.png'">
+ </div>
+ <a href="thank-you.html" class="btn">Join a Class</a>
 </section>
 
 <footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
