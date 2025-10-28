@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Echelon Fits | Built for the Elite Within</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --accent:#e88cae;      /* soft rose pink */
-  --bg1:#f7f7f7;         /* light gray gradient */
+  --accent:#e88cae;
+  --bg1:#f7f7f7;
   --bg2:#ececec;
   --text:#222;
 }
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
   font-family:'Montserrat',sans-serif;
-  color:var(--text);
   background:linear-gradient(to bottom,var(--bg1),var(--bg2));
+  color:var(--text);
   padding-top:100px;
   animation:fadeIn 1.2s ease;
 }
@@ -25,98 +25,90 @@ header{
   position:fixed;top:0;width:100%;
   background:rgba(255,255,255,0.9);
   box-shadow:0 2px 10px rgba(0,0,0,0.1);
-  z-index:1000;
   backdrop-filter:blur(10px);
+  z-index:1000;
 }
 .header-container{
   display:flex;justify-content:space-between;align-items:center;
-  padding:1rem 6%;
-  flex-wrap:wrap;
+  padding:1rem 6%;flex-wrap:wrap;
 }
 .logo{height:50px;}
-.brand-name{font-size:1.5rem;color:var(--accent);font-weight:700;letter-spacing:1px;}
-nav{display:flex;gap:1.2rem;flex-wrap:wrap;}
-nav a{
-  color:var(--text);text-decoration:none;font-weight:600;
-  transition:color .3s;
-}
+.brand-name{color:var(--accent);font-weight:700;}
+nav{display:flex;gap:1.2rem;}
+nav a{color:var(--text);text-decoration:none;font-weight:600;}
 nav a:hover{color:var(--accent);}
-
 .hero{
-  height:100vh;
-  background:linear-gradient(rgba(255,255,255,0.8),rgba(236,236,236,0.8)),
-    url('https://images.unsplash.com/photo-1594737625785-c02a09b0a3c2?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;
-  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 2rem;
+  height:90vh;
+  background:url('images/homepage-banner.jpg') center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;
 }
-.hero h1{font-size:3rem;color:var(--accent);margin-bottom:1rem;}
-.hero p{font-size:1.2rem;max-width:600px;margin-bottom:2rem;}
+.hero h1{
+  background:rgba(255,255,255,0.7);
+  padding:1rem 2rem;border-radius:15px;
+  color:var(--accent);font-size:2.5rem;text-align:center;
+}
+section{padding:5rem 10%;text-align:center;}
+h2{color:var(--accent);margin-bottom:1rem;}
+p{max-width:800px;margin:0 auto 2rem;line-height:1.8;color:#444;}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1rem;
+}
+.gallery img{
+  width:100%;height:250px;object-fit:cover;border-radius:10px;
+  transition:transform .3s;
+}
+.gallery img:hover{transform:scale(1.05);}
 .btn{
-  padding:.9rem 2.3rem;background:var(--accent);color:#fff;border:none;border-radius:40px;
-  font-weight:600;text-decoration:none;transition:.3s;
+  display:inline-block;
+  background:var(--accent);color:#fff;
+  padding:0.9rem 2.2rem;border-radius:40px;
+  text-decoration:none;font-weight:600;margin-top:1rem;
 }
 .btn:hover{background:#f0a9c0;}
-
-section{padding:5rem 10%;text-align:center;animation:fadeUp 1s ease;}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
-section h2{font-size:2rem;color:var(--accent);margin-bottom:1rem;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
-.card{
-  background:#fff;border-radius:15px;padding:2rem;box-shadow:0 4px 10px rgba(0,0,0,0.05);
-  transition:.3s;
+footer{
+  background:#fff;text-align:center;
+  padding:2rem 0;color:#888;font-size:.9rem;
 }
-.card:hover{transform:translateY(-8px);}
-.card h3{color:var(--accent);margin-bottom:.5rem;}
-
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:3rem;}
-.gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
-.gallery img:hover{transform:scale(1.05);}
-footer{background:#fff;text-align:center;padding:2rem 0;color:#888;font-size:.9rem;margin-top:2rem;}
-footer span{color:var(--accent);font-weight:600;}
+footer span{color:var(--accent);}
 </style>
 </head>
 <body>
 
 <header>
  <div class="header-container">
-   <div style="display:flex;align-items:center;gap:10px;">
-     <img src="echelon-logo.png" alt="Echelon Fits Logo" class="logo" />
-     <h1 class="brand-name">ECHELON FITS</h1>
-   </div>
-   <nav>
-     <a href="index.html">Home</a>
-     <a href="about.html">About</a>
-     <a href="store.html">Store</a>
-     <a href="#training">Training</a>
-     <a href="#contact">Contact</a>
-   </nav>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo">
+    <h1 class="brand-name">ECHELON FITS</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+    <a href="#contact">Contact</a>
+  </nav>
  </div>
 </header>
 
-<section class="hero">
+<div class="hero">
   <h1>Built for the Elite Within</h1>
-  <p>Where strength meets style — train, perform, and live with purpose.</p>
-  <a href="#training" class="btn">Join the Movement</a>
-</section>
+</div>
 
-<section id="training">
-  <h2>Training Programs</h2>
-  <div class="cards">
-    <a href="coaching.html" class="card"><h3>1-on-1 Coaching</h3><p>Personalized programs to unlock your highest potential.</p></a>
-    <a href="group-training.html" class="card"><h3>Group Training</h3><p>Push limits together — motivation through unity.</p></a>
-    <a href="online-elite.html" class="card"><h3>Online Elite</h3><p>Remote training, real results — anywhere, anytime.</p></a>
-  </div>
+<section>
+  <h2>Strength. Precision. Performance.</h2>
+  <p>Echelon Fits blends gym culture and luxury design — gear made for those who refuse to settle. Whether you're chasing your next PR or just your next milestone, do it in style and power.</p>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1571019613914-85f342c2b2d6?auto=format&fit=crop&w=800&q=80" alt="Workout" />
-    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Weights" />
-    <img src="https://images.unsplash.com/photo-1594737625785-c02a09b0a3c2?auto=format&fit=crop&w=800&q=80" alt="Gym" />
+    <img src="images/gym1.jpg" alt="Gym Training 1">
+    <img src="images/gym2.jpg" alt="Gym Training 2">
+    <img src="images/gym3.jpg" alt="Gym Training 3">
   </div>
+  <a href="store.html" class="btn">Explore the Collection</a>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@echelonfits.com" style="color:var(--accent);text-decoration:none;">info@echelonfits.com</a></p>
-</section>
+<footer>
+  © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
+</footer>
 
-<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
 </body>
 </html>
