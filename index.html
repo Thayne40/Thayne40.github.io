@@ -7,13 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 <style>
 :root {
-  --accent: #e88cae;
-  --bg1: #f7f7f7;
-  --bg2: #ececec;
-  --text: #222;
+  --accent:#e88cae;
+  --bg1:#f7f7f7;
+  --bg2:#ececec;
+  --text:#222;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body {
+body{
   font-family:'Montserrat',sans-serif;
   background:linear-gradient(to bottom,var(--bg1),var(--bg2));
   color:var(--text);
@@ -21,58 +21,90 @@ body {
   animation:fadeIn 1.2s ease;
 }
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-header {
+header{
   position:fixed;top:0;width:100%;
   background:rgba(255,255,255,0.9);
   box-shadow:0 2px 10px rgba(0,0,0,0.1);
   backdrop-filter:blur(10px);
   z-index:1000;
 }
-.header-container {
+.header-container{
   display:flex;justify-content:space-between;align-items:center;
   padding:1rem 6%;flex-wrap:wrap;
 }
-.logo {height:50px;}
-.brand-name {color:var(--accent);font-weight:700;}
-nav {display:flex;gap:1.2rem;}
-nav a {color:var(--text);text-decoration:none;font-weight:600;}
-nav a:hover {color:var(--accent);}
-.hero {
-  height:90vh;
+.logo{height:50px;}
+.brand-name{color:var(--accent);font-weight:700;}
+nav{display:flex;gap:1.2rem;}
+nav a{color:var(--text);text-decoration:none;font-weight:600;}
+nav a:hover{color:var(--accent);}
+
+/* Hero Section */
+.hero{
+  position:relative;
+  height:100vh;
   background:url('images/homepage-banner.jpg') center/cover no-repeat;
-  display:flex;align-items:center;justify-content:center;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  text-align:center;
 }
-.hero h1 {
+.hero h1{
   background:rgba(255,255,255,0.7);
   padding:1rem 2rem;border-radius:15px;
-  color:var(--accent);font-size:2.5rem;text-align:center;
+  color:var(--accent);font-size:2.5rem;margin-bottom:2rem;
 }
-section {padding:5rem 10%;text-align:center;}
-h2 {color:var(--accent);margin-bottom:1rem;}
-p {max-width:800px;margin:0 auto 2rem;line-height:1.8;color:#444;}
-.gallery {
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+/* Translucent buttons */
+.hero-links{
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;
+}
+.hero-links a{
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:.5px;
+  color:#fff;
+  background:rgba(232,140,174,0.35);
+  border:1px solid rgba(255,255,255,0.3);
+  backdrop-filter:blur(6px);
+  padding:1rem 2.5rem;
+  border-radius:40px;
+  transition:all .4s ease;
+}
+.hero-links a:hover{
+  background:rgba(232,140,174,0.6);
+  transform:scale(1.07);
+  box-shadow:0 0 20px rgba(232,140,174,0.4);
+}
+
+/* Main content */
+section{padding:5rem 10%;text-align:center;}
+h2{color:var(--accent);margin-bottom:1rem;}
+p{max-width:800px;margin:0 auto 2rem;line-height:1.8;color:#444;}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:1rem;
 }
-.gallery img {
+.gallery img{
   width:100%;height:250px;object-fit:cover;border-radius:10px;
   transition:transform .3s;
 }
 .gallery img:hover{transform:scale(1.05);}
-.btn {
-  display:inline-block;background:var(--accent);color:#fff;
+.btn{
+  display:inline-block;
+  background:var(--accent);color:#fff;
   padding:0.9rem 2.2rem;border-radius:40px;
   text-decoration:none;font-weight:600;margin-top:1rem;
 }
 .btn:hover{background:#f0a9c0;}
-footer {
-  background:#fff;text-align:center;padding:2rem 0;
-  color:#888;font-size:.9rem;
+footer{
+  background:#fff;text-align:center;
+  padding:2rem 0;color:#888;font-size:.9rem;
 }
 footer span{color:var(--accent);}
 </style>
 </head>
 <body>
+
 <header>
  <div class="header-container">
   <div style="display:flex;align-items:center;gap:10px;">
@@ -83,16 +115,23 @@ footer span{color:var(--accent);}
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="store.html">Store</a>
-    <a href="#contact">Contact</a>
+    <a href="contact.html">Contact</a>
   </nav>
  </div>
 </header>
 
-<div class="hero"><h1>Built for the Elite Within</h1></div>
+<div class="hero">
+  <h1>Built for the Elite Within</h1>
+  <div class="hero-links">
+    <a href="coaching.html">1-on-1 Coaching</a>
+    <a href="group-training.html">Group Training</a>
+    <a href="online-elite.html">Online Elite</a>
+  </div>
+</div>
 
 <section>
   <h2>Strength. Precision. Performance.</h2>
-  <p>Echelon Fits blends gym culture and luxury design — gear made for those who refuse to settle. Whether you're chasing your next PR or your next milestone, do it in style and power.</p>
+  <p>Echelon Fits blends gym culture and luxury design — gear made for those who refuse to settle. Whether you’re chasing your next PR or your next milestone, do it in style and power.</p>
   <div class="gallery">
     <img src="images/gym1.jpg" alt="Gym Training 1" />
     <img src="images/gym2.jpg" alt="Gym Training 2" />
@@ -101,6 +140,9 @@ footer span{color:var(--accent);}
   <a href="store.html" class="btn">Explore the Collection</a>
 </section>
 
-<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
+<footer>
+  © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
+</footer>
+
 </body>
 </html>
