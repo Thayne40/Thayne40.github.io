@@ -38,7 +38,7 @@ nav{display:flex;gap:1.2rem;}
 nav a{color:var(--text);text-decoration:none;font-weight:600;}
 nav a:hover{color:var(--accent);}
 
-/* Hero Section */
+/* HERO SECTION */
 .hero{
   position:relative;
   height:100vh;
@@ -46,8 +46,27 @@ nav a:hover{color:var(--accent);}
   display:flex;flex-direction:column;
   justify-content:center;align-items:center;
   text-align:center;
+  overflow:hidden;
 }
+
+/* Background logo watermark */
+.hero::before{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:url('images/echelon-logo.png') center/contain no-repeat;
+  opacity:0.08; /* Controls transparency */
+  width:70%;
+  height:70%;
+  filter:blur(1px);
+  z-index:1;
+}
+
 .hero h1{
+  position:relative;
+  z-index:2;
   background:rgba(255,255,255,0.7);
   padding:1rem 2rem;border-radius:15px;
   color:var(--accent);font-size:2.5rem;margin-bottom:2rem;
@@ -55,6 +74,8 @@ nav a:hover{color:var(--accent);}
 
 /* Translucent buttons */
 .hero-links{
+  position:relative;
+  z-index:2;
   display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;
 }
 .hero-links a{
