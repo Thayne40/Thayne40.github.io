@@ -129,3 +129,13 @@ footer{
   font-size:.9rem;
 }
 footer span{color:var(--accent);}
+/* ---------- FIX BACKGROUND IMAGE SCALING ---------- */
+.banner,
+.hero,
+section,
+div[style*="background:url"] {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll;
+}
