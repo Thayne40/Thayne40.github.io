@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact Us | Echelon Fits</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --accent:#e88cae;
+  --bg1:#f7f7f7;
+  --bg2:#ececec;
+  --text:#222;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body {
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(to bottom,var(--bg1),var(--bg2));
+  color:var(--text);
+  padding-top:100px;
+  animation:fadeIn 1.2s ease;
+}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+
+header {
+  position:fixed;top:0;width:100%;
+  background:rgba(255,255,255,0.9);
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+.header-container {
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 6%;flex-wrap:wrap;
+}
+.logo{height:50px;}
+.brand-name{color:var(--accent);font-weight:700;}
+nav{display:flex;gap:1.2rem;}
+nav a{color:var(--text);text-decoration:none;font-weight:600;}
+nav a:hover{color:var(--accent);}
+
+/* Contact layout */
+section {
+  padding:5rem 10%;
+  text-align:center;
+}
+h1 {
+  color:var(--accent);
+  font-size:2rem;
+  margin-bottom:1.5rem;
+}
+p {
+  max-width:700px;
+  margin:0 auto 2rem;
+  line-height:1.8;
+  color:#444;
+}
+.contact-info {
+  margin:2rem auto;
+  text-align:center;
+}
+.contact-item {
+  margin:0.7rem 0;
+  font-size:1.1rem;
+}
+.contact-item a {
+  color:var(--accent);
+  text-decoration:none;
+  transition:color 0.3s;
+}
+.contact-item a:hover {
+  color:#f0a9c0;
+}
+
+/* Social buttons */
+.socials {
+  margin-top:3rem;
+  display:flex;
+  justify-content:center;
+  gap:1.5rem;
+  flex-wrap:wrap;
+}
+.socials a {
+  text-decoration:none;
+  color:#fff;
+  background:rgba(232,140,174,0.35);
+  border:1px solid rgba(255,255,255,0.3);
+  backdrop-filter:blur(6px);
+  padding:0.9rem 1.5rem;
+  border-radius:40px;
+  font-weight:600;
+  transition:all 0.3s ease;
+}
+.socials a:hover {
+  background:rgba(232,140,174,0.6);
+  transform:scale(1.07);
+  box-shadow:0 0 20px rgba(232,140,174,0.4);
+}
+
+/* Footer */
+footer {
+  background:#fff;
+  text-align:center;
+  padding:2rem 0;
+  color:#888;
+  font-size:.9rem;
+}
+footer span{color:var(--accent);}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="header-container">
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
+    <h1 class="brand-name">ECHELON FITS</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<section>
+  <h1>Contact Echelon Fits</h1>
+  <p>We’d love to connect with you. Whether you’re interested in training, apparel, or partnerships, reach out and we’ll get back to you quickly.</p>
+
+  <div class="contact-info">
+    <div class="contact-item"><strong>Email:</strong> <a href="mailto:gtgauthier21@gmail.com">gtgauthier21@gmail.com</a></div>
+    <div class="contact-item"><strong>Phone:</strong> <a href="tel:+13076226977">(307) 622-6977</a></div>
+  </div>
+
+  <h2 style="color:var(--accent);margin-top:3rem;">Connect With Us</h2>
+  <div class="socials">
+    <a href="https://www.instagram.com/garnergauthier/?next=%2F" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/garner.gauthier/" target="_blank">Facebook</a>
+    <a href="https://www.linkedin.com/in/garner-gauthier-070b0b396/" target="_blank">LinkedIn</a>
+    <a href="https://www.youtube.com/@garnergauthier2659" target="_blank">YouTube</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 <span>Echelon Fits</span>. Built for the Elite Within.
+</footer>
+
+</body>
+</html>
