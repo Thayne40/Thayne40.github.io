@@ -5,49 +5,31 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Online Elite | Echelon Fits</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<style>
-:root{--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,var(--bg1),var(--bg2));color:var(--text);padding-top:100px;animation:fadeIn 1.2s ease;}
-@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-header{position:fixed;top:0;width:100%;background:rgba(255,255,255,.9);box-shadow:0 2px 10px rgba(0,0,0,.1);backdrop-filter:blur(10px);z-index:1000;}
-.header-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;flex-wrap:wrap;}
-.logo{height:50px;}
-.brand-name{color:var(--accent);font-weight:700;}
-nav{display:flex;gap:1.2rem;}
-nav a{color:var(--text);text-decoration:none;font-weight:600;}
-nav a:hover{color:var(--accent);}
-.banner{height:60vh;background:url('images/gym8.jpg')center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
-.banner h1{background:rgba(255,255,255,.7);padding:1rem 2rem;border-radius:15px;color:var(--accent);}
-section{padding:5rem 10%;text-align:center;}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:2rem;}
-.gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
-.gallery img:hover{transform:scale(1.05);}
-footer{background:#fff;text-align:center;padding:2rem 0;color:#888;font-size:.9rem;}
-footer span{color:var(--accent);}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
  <div class="header-container">
   <div style="display:flex;align-items:center;gap:10px;">
-    <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
-    <h1 class="brand-name">ECHELON FITS</h1>
+   <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
+   <h1 class="brand-name">ECHELON FITS</h1>
   </div>
-  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="index.html#contact">Contact</a></nav>
+  <nav>
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="store.html">Store</a>
+   <a href="contact.html">Contact</a>
+  </nav>
  </div>
 </header>
 
-<div class="banner"><h1>Online Elite Program</h1></div>
+<div class="banner" style="height:50vh;background:url('images/gym13.jpg') center/cover no-repeat;">
+  <h1>Online Elite Program</h1>
+</div>
 
 <section>
- <h2>Train Anywhere in Style</h2>
- <p>Join our exclusive virtual platform — complete workouts, track nutrition, and connect with top-tier trainers wherever you are.</p>
- <div class="gallery">
-  <img src="images/gym9.jpg" alt="Virtual workout">
-  <img src="images/gym10.jpg" alt="Online coaching">
-  <img src="images/gym3.jpg" alt="Digital training session">
- </div>
+ <p>The Online Elite program delivers the same high-level training and accountability as our in-person sessions — anytime, anywhere. Get personalized plans, weekly feedback, and access to exclusive digital resources.</p>
+ <a href="thank-you.html" class="btn">Join Online</a>
 </section>
 
 <footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
