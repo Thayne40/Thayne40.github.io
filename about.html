@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <title>About Us | Echelon Fits</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 <style>
-:root{--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
+:root {--accent:#e88cae;--bg1:#f7f7f7;--bg2:#ececec;--text:#222;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,var(--bg1),var(--bg2));color:var(--text);padding-top:100px;animation:fadeIn 1.2s ease;}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
@@ -16,14 +17,11 @@ header{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.9);box-shad
 nav{display:flex;gap:1.2rem;}
 nav a{color:var(--text);text-decoration:none;font-weight:600;}
 nav a:hover{color:var(--accent);}
-.banner{height:60vh;background:url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
+.banner{height:60vh;background:url('images/gym4.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;}
 .banner h1{background:rgba(255,255,255,0.7);padding:1rem 2rem;border-radius:15px;color:var(--accent);}
 section{padding:5rem 10%;text-align:center;}
 h2{color:var(--accent);margin-bottom:1rem;}
 p{max-width:800px;margin:0 auto 2rem;line-height:1.8;color:#444;}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
-.gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;transition:transform .3s;}
-.gallery img:hover{transform:scale(1.05);}
 footer{background:#fff;text-align:center;padding:2rem 0;color:#888;font-size:.9rem;}
 footer span{color:var(--accent);}
 </style>
@@ -31,10 +29,16 @@ footer span{color:var(--accent);}
 <body>
 <header>
  <div class="header-container">
-   <div style="display:flex;align-items:center;gap:10px;">
-     <a href="index.html"><img src="echelon-logo.png" class="logo"></a><h1 class="brand-name">ECHELON FITS</h1>
-   </div>
-   <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="index.html#contact">Contact</a></nav>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
+    <h1 class="brand-name">ECHELON FITS</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
  </div>
 </header>
 
@@ -42,12 +46,12 @@ footer span{color:var(--accent);}
 
 <section>
   <h2>Our Mission</h2>
-  <p>Echelon Fits was founded to inspire individuals to push boundaries and pursue excellence. Our mission is to blend premium fitness apparel with elite-level training culture — helping you look and perform your best.</p>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1571019613914-85f342c2b2d6?auto=format&fit=crop&w=800&q=80">
-    <img src="https://images.unsplash.com/photo-1583454110559-21a6e88b49c5?auto=format&fit=crop&w=800&q=80">
-    <img src="https://images.unsplash.com/photo-1603079847730-4f0742a74b19?auto=format&fit=crop&w=800&q=80">
-  </div>
+  <p>At Echelon Fits, our mission is simple — craft apparel and training that push you to become the elite version of yourself. We blend performance design with a refined look that stands out in and out of the gym.</p>
+
+  <h2>Our Vision</h2>
+  <p>To inspire a culture of strength, excellence, and determination. Whether you’re an athlete, entrepreneur, or creator, Echelon Fits represents the drive to rise higher every day.</p>
+
+  <img src="images/gym5.jpg" alt="Athlete Training" style="width:100%;max-width:700px;border-radius:12px;margin-top:2rem;">
 </section>
 
 <footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
