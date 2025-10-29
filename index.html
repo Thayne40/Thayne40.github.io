@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Echelon Fits | Built for the Elite Within</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css">
 <style>
 body{
-  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
-  background-size:400% 400%;
-  animation:shine 15s ease infinite;
+  font-family:Arial,Helvetica,sans-serif;
+  background-color:#f4f1f2;
+  color:#222;
+  margin:0;
+  padding:0;
+  text-align:center;
 }
-@keyframes shine{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
+header{
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  padding:10px 0;
+  position:sticky;
+  top:0;
+}
+nav a{
+  margin:0 10px;
+  color:#222;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{color:#e88cae;}
+.banner{
+  height:25vh;
+  background:url('images/gym1.jpg') center/cover no-repeat;
+}
+h1{color:#e88cae;margin-top:25px;}
+section{
+  padding:30px 10%;
+}
+.gallery{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+.gallery img{
+  width:220px;
+  height:150px;
+  object-fit:cover;
+  border-radius:8px;
+}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  background-color:#e88cae;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:30px;
+  text-decoration:none;
+}
+.btn:hover{background-color:#d6769c;}
+footer{
+  background:#fff;
+  color:#666;
+  padding:15px 0;
+  margin-top:40px;
+  font-size:0.9rem;
 }
 </style>
 </head>
 <body>
+
 <header>
- <div class="header-container">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo" />
-    <h1 class="brand-name">ECHELON FITS</h1>
-  </div>
+  <h2>ECHELON FITS</h2>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="store.html">Store</a>
     <a href="contact.html">Contact</a>
   </nav>
- </div>
 </header>
 
-<!-- Hero Section -->
-<div class="hero" style="height:100vh;background:url('images/homepage-banner.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
-  <h1>Built for the Elite Within</h1>
-  <div class="hero-links">
-    <a href="coaching.html">1-on-1 Coaching</a>
-    <a href="group-training.html">Group Training</a>
-    <a href="online-elite.html">Online Elite</a>
-  </div>
-</div>
+<div class="banner"></div>
+
+<h1>Built for the Elite Within</h1>
 
 <section>
   <h2>Strength · Precision · Performance</h2>
-  <p>Echelon Fits blends gym culture with luxury design — gear made for those who refuse to settle. Whether you’re chasing your next PR or milestone, do it in style and power.</p>
+  <p>Echelon Fits is where dedication meets design. Our mission is to create gear that fuels the elite mindset — modern, functional and driven by excellence.</p>
+
   <div class="gallery">
-    <img src="images/gym1.jpg" alt="Gym Training 1" onerror="this.src='images/echelon-logo.png'">
-    <img src="images/gym2.jpg" alt="Gym Training 2" onerror="this.src='images/echelon-logo.png'">
-    <img src="images/gym3.jpg" alt="Gym Training 3" onerror="this.src='images/echelon-logo.png'">
+    <img src="images/gym2.jpg" alt="Training 1" onerror="this.src='images/echelon-logo.png'">
+    <img src="images/gym3.jpg" alt="Training 2" onerror="this.src='images/echelon-logo.png'">
+    <img src="images/gym4.jpg" alt="Training 3" onerror="this.src='images/echelon-logo.png'">
   </div>
-  <a href="store.html" class="btn">Explore the Collection</a>
+
+  <a href="store.html" class="btn">Explore Store</a>
 </section>
 
-<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
+<footer>© 2025 Echelon Fits · Built for the Elite Within</footer>
+
 </body>
 </html>
