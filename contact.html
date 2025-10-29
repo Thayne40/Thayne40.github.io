@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Contact | Echelon Fits</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
 <style>
-body{
-  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
-  background-size:400% 400%;
-  animation:shine 15s ease infinite;
-}
-@keyframes shine{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
-}
+body{font-family:Arial,Helvetica,sans-serif;background-color:#f4f1f2;color:#222;margin:0;text-align:center;}
+header{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);padding:10px 0;position:sticky;top:0;}
+nav a{margin:0 10px;color:#222;text-decoration:none;font-weight:bold;}
+nav a:hover{color:#e88cae;}
+.banner{height:25vh;background:url('images/gym11.jpg') center/cover no-repeat;}
+h1{color:#e88cae;margin-top:25px;}
+section{padding:30px 10%;max-width:600px;margin:auto;line-height:1.6;}
+a.link{color:#e88cae;text-decoration:none;}
+.socials{display:flex;justify-content:center;gap:15px;margin-top:20px;}
+.socials a{color:#fff;background:#e88cae;padding:8px 16px;border-radius:20px;text-decoration:none;font-size:0.9rem;}
+.socials a:hover{background:#d6769c;}
+footer{background:#fff;color:#666;padding:15px 0;margin-top:40px;font-size:0.9rem;}
 </style>
 </head>
 <body>
+
 <header>
- <div class="header-container">
-  <div style="display:flex;align-items:center;gap:10px;">
-   <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
-   <h1 class="brand-name">ECHELON FITS</h1>
-  </div>
+  <h2>ECHELON FITS</h2>
   <nav>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="store.html">Store</a>
-   <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+    <a href="contact.html">Contact</a>
   </nav>
- </div>
 </header>
 
-<div class="banner" style="height:45vh;background:url('images/gym10.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
-  <h1>Contact Echelon Fits</h1>
-</div>
+<div class="banner"></div>
+
+<h1>Contact Us</h1>
 
 <section>
- <p>Reach out to us for training, partnerships, or product questions. We’ll respond as soon as possible.</p>
-
- <div style="margin-top:2rem;text-align:center;">
-   <p><strong>Email:</strong> <a href="mailto:gtgauthier21@gmail.com" style="color:#e88cae;text-decoration:none;">gtgauthier21@gmail.com</a></p>
-   <p><strong>Phone:</strong> <a href="tel:+13076226977" style="color:#e88cae;text-decoration:none;">(307) 622-6977</a></p>
- </div>
-
- <h2 style="color:var(--accent);margin-top:3rem;">Follow Us</h2>
- <div class="socials">
-  <a href="https://www.instagram.com/garnergauthier/?next=%2F" target="_blank">Instagram</a>
-  <a href="https://www.facebook.com/garner.gauthier/" target="_blank">Facebook</a>
-  <a href="https://www.linkedin.com/in/garner-gauthier-070b0b396/" target="_blank">LinkedIn</a>
-  <a href="https://www.youtube.com/@garnergauthier2659" target="_blank">YouTube</a>
- </div>
+  <p>We’d love to hear from you — whether it’s for coaching, collaboration, or customer support.</p>
+  <p><strong>Email:</strong> <a class="link" href="mailto:gtgauthier21@gmail.com">gtgauthier21@gmail.com</a></p>
+  <p><strong>Phone:</strong> <a class="link" href="tel:+13076226977">(307) 622-6977</a></p>
+  <div class="socials">
+    <a href="https://www.instagram.com/garnergauthier/?next=%2F" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/garner.gauthier/" target="_blank">Facebook</a>
+    <a href="https://www.linkedin.com/in/garner-gauthier-070b0b396/" target="_blank">LinkedIn</a>
+    <a href="https://www.youtube.com/@garnergauthier2659" target="_blank">YouTube</a>
+  </div>
 </section>
 
-<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
+<footer>© 2025 Echelon Fits · Built for the Elite Within</footer>
 </body>
 </html>
