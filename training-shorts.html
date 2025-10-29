@@ -2,44 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Training Shorts | Echelon Fits</title>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;background-color:#f4f1f2;color:#222;margin:0;text-align:center;}
-header{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);padding:10px 0;position:sticky;top:0;}
-nav a{margin:0 10px;color:#222;text-decoration:none;font-weight:bold;}
+body{margin:0;font-family:"Montserrat",Arial,sans-serif;background:#f4f1f2;color:#222;text-align:center;}
+header{position:sticky;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.75);backdrop-filter:blur(10px);box-shadow:0 2px 8px rgba(0,0,0,0.1);padding:10px 5%;z-index:1000;}
+header img{height:40px;margin-right:10px;}
+.brand{display:flex;align-items:center;font-weight:bold;color:#e88cae;font-size:1.3rem;}
+nav a{margin:0 10px;color:#333;text-decoration:none;font-weight:600;transition:color .3s;}
 nav a:hover{color:#e88cae;}
-.banner{height:25vh;background:url('images/gym8.jpg') center/cover no-repeat;}
+.banner{height:25vh;background:url('images/gym8.jpg') center/cover no-repeat;position:relative;}
+.banner::after{content:"";background:url('images/echelon-logo.png') center/contain no-repeat;opacity:.1;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60%;height:60%;}
+section{padding:40px 10%;max-width:800px;margin:auto;line-height:1.6;}
 h1{color:#e88cae;margin-top:25px;}
-section{padding:30px 10%;max-width:800px;margin:auto;line-height:1.6;}
-.product-img{width:240px;height:160px;object-fit:cover;border-radius:8px;margin:10px;}
-.btn{display:inline-block;margin-top:20px;background:#e88cae;color:#fff;padding:10px 20px;border-radius:25px;text-decoration:none;}
-.btn:hover{background:#d6769c;}
-footer{background:#fff;color:#666;padding:15px 0;margin-top:40px;font-size:0.9rem;}
+.product-img{width:230px;height:150px;object-fit:cover;border-radius:10px;margin:10px;}
+.btn{display:inline-block;margin-top:20px;background:rgba(232,140,174,.3);color:#222;padding:10px 20px;border-radius:25px;text-decoration:none;transition:all .3s;}
+.btn:hover{background:rgba(232,140,174,.6);transform:scale(1.05);}
+footer{background:#fff;text-align:center;color:#777;padding:20px 0;font-size:.9rem;position:relative;margin-top:40px;}
+footer::before{content:"";background:url('images/echelon-logo.png') center/contain no-repeat;opacity:.08;position:absolute;top:50%;left:50%;width:200px;height:200px;transform:translate(-50%,-50%);}
 </style>
 </head>
 <body>
-
 <header>
-<h2>ECHELON FITS</h2>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="store.html">Store</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <div class="brand"><img src="images/echelon-logo.png" alt="Echelon Logo">Echelon Fits</div>
+  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="contact.html">Contact</a></nav>
 </header>
-
 <div class="banner"></div>
-
 <h1>Training Shorts</h1>
-
 <section>
-<p>Engineered for mobility and comfort. Our Training Shorts move with you and keep you cool through every rep.</p>
-<img src="images/gym3.jpg" alt="Training Shorts" class="product-img" onerror="this.src='images/echelon-logo.png'">
+<p>Built for endurance and motion. Our shorts offer unrestricted mobility with a premium lightweight fabric that supports every rep.</p>
+<img src="images/gym3.jpg" alt="Training Shorts" class="product-img">
 <a href="thank-you.html" class="btn">Buy Now</a>
 </section>
-
 <footer>© 2025 Echelon Fits · Built for the Elite Within</footer>
 </body>
 </html>
