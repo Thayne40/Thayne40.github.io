@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>About Us | Echelon Fits</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
 <style>
 body{
-  background:linear-gradient(135deg,#f9f9f9,#ececec,#e3d4d8);
-  background-size:400% 400%;
-  animation:shine 15s ease infinite;
+  font-family:Arial,Helvetica,sans-serif;
+  background-color:#f4f1f2;
+  color:#222;
+  margin:0;
+  padding:0;
+  text-align:center;
 }
-@keyframes shine{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
+header{
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  padding:10px 0;
+  position:sticky;
+  top:0;
+}
+nav a{
+  margin:0 10px;
+  color:#222;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{color:#e88cae;}
+.banner{
+  height:25vh;
+  background:url('images/gym5.jpg') center/cover no-repeat;
+}
+h1{color:#e88cae;margin-top:25px;}
+section{
+  padding:30px 10%;
+  max-width:800px;
+  margin:auto;
+  line-height:1.6;
+}
+footer{
+  background:#fff;
+  color:#666;
+  padding:15px 0;
+  margin-top:40px;
+  font-size:0.9rem;
 }
 </style>
 </head>
 <body>
+
 <header>
- <div class="header-container">
-  <div style="display:flex;align-items:center;gap:10px;">
-   <a href="index.html"><img src="images/echelon-logo.png" class="logo" alt="Echelon Fits Logo"></a>
-   <h1 class="brand-name">ECHELON FITS</h1>
-  </div>
+  <h2>ECHELON FITS</h2>
   <nav>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="store.html">Store</a>
-   <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+    <a href="contact.html">Contact</a>
   </nav>
- </div>
 </header>
 
-<div class="banner" style="height:60vh;background:url('images/gym4.jpg'),linear-gradient(to bottom,#f7f7f7,#e3d4d8);background-size:cover;">
-  <h1>About Echelon Fits</h1>
-</div>
+<div class="banner"></div>
+
+<h1>About Echelon Fits</h1>
 
 <section>
- <h2>Our Mission</h2>
- <p>At Echelon Fits, our mission is to design performance apparel and training that inspire people to become the elite version of themselves — blending strength with sophistication.</p>
- <h2>Our Vision</h2>
- <p>We strive to create a culture of discipline, style, and drive. Each collection represents the balance of hard work and luxury aesthetic that defines Echelon Fits.</p>
- <a href="store.html" class="btn">Shop Now</a>
+  <p><strong>Echelon Fits</strong> was built on the belief that discipline and style go hand in hand. We combine high-performance training essentials with a minimal luxury design so you can look as sharp as you perform.</p>
+  <p>From athletes to creatives, our community embodies the relentless pursuit of growth. Every product we create is crafted to motivate you toward the next level — physically, mentally and professionally.</p>
 </section>
 
-<footer>© 2025 <span>Echelon Fits</span>. Built for the Elite Within.</footer>
+<footer>© 2025 Echelon Fits · Built for the Elite Within</footer>
+
 </body>
 </html>
