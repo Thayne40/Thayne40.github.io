@@ -16,17 +16,13 @@
 
     /* Navigation */
     nav {
-      position: fixed;
-      top: 0;
       width: 100%;
-      backdrop-filter: blur(12px);
-      background: rgba(50, 50, 50, 0.3);
+      background: rgba(50, 50, 50, 0.4);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 3rem;
       box-shadow: 0 4px 20px rgba(255, 105, 135, 0.2);
-      z-index: 100;
     }
 
     nav .logo {
@@ -69,6 +65,7 @@
       padding: 8rem 10%;
       min-height: 100vh;
       gap: 4rem;
+      box-sizing: border-box;
     }
 
     .hero img {
@@ -129,16 +126,18 @@
 
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 3rem 1rem;
       color: #aaa;
       font-size: 0.9rem;
+      background: rgba(30, 30, 30, 0.6);
+      margin-top: 3rem;
     }
 
     @media (max-width: 900px) {
       .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 7rem;
+        padding-top: 4rem;
       }
       .hero img {
         width: 260px;
