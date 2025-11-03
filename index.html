@@ -1,208 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Echelon Fits | Built for the Elite Within</title>
-<style>
-/* ---------- GLOBAL STYLE ---------- */
-body {
-  margin: 0;
-  font-family: "Montserrat", Arial, sans-serif;
-  background: #f4f1f2;
-  color: #222;
-  text-align: center;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echelon Fits | Built for the Elite Within</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+      color: #f2f2f2;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
 
-/* ---------- HEADER ---------- */
-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 10px 5%;
-  z-index: 1000;
-}
-header img {
-  height: 40px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  color: #e88cae;
-  font-size: 1.3rem;
-}
-nav a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-nav a:hover {
-  color: #e88cae;
-}
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      backdrop-filter: blur(12px);
+      background: rgba(50, 50, 50, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      box-shadow: 0 4px 20px rgba(255, 105, 135, 0.2);
+      z-index: 100;
+    }
 
-/* ---------- HERO SECTION ---------- */
-.hero {
-  background: url('images/gym1.jpg') center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-.hero::after {
-  content: "";
-  background: url('images/echelon-logo.png') center/contain no-repeat;
-  opacity: 0.1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  height: 70%;
-}
-.hero h1 {
-  color: #e88cae;
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(6px);
-  padding: 1rem 2rem;
-  border-radius: 15px;
-  font-size: 1.8rem;
-  position: relative;
-  z-index: 2;
-}
-.hero-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  position: relative;
-  z-index: 2;
-}
-.hero-links a {
-  background: rgba(232,140,174,0.25);
-  color: #222;
-  border: 1px solid rgba(255,255,255,0.5);
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-.hero-links a:hover {
-  background: rgba(232,140,174,0.5);
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(232,140,174,0.3);
-}
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #ff6b9f; /* rose pink */
+    }
 
-/* ---------- GALLERY SECTION ---------- */
-section {
-  padding: 40px 10%;
-}
-h2 {
-  color: #e88cae;
-  margin-bottom: 10px;
-}
-p {
-  max-width: 700px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
-}
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-}
-.gallery img {
-  width: 230px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.gallery img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+    nav .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
 
-/* ---------- FOOTER ---------- */
-footer {
-  background: #fff;
-  text-align: center;
-  color: #777;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  position: relative;
-}
-footer::before {
-  content: "";
-  background: url('images/echelon-logo.png') center/contain no-repeat;
-  opacity: 0.08;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  transform: translate(-50%, -50%);
-}
-</style>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff6b9f;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8rem 10%;
+      min-height: 100vh;
+      gap: 4rem;
+    }
+
+    .hero img {
+      width: 380px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff6b9f;
+      box-shadow: 0 0 20px rgba(255, 107, 159, 0.4);
+      animation: fadeInLeft 1.5s ease;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      animation: fadeInRight 1.5s ease;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      color: #ff6b9f;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      background-color: #ff6b9f;
+      color: #1a1a1a;
+      padding: 0.8rem 1.6rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .hero-content a:hover {
+      background-color: #e85b8a;
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(255, 107, 159, 0.5);
+    }
+
+    /* Animations */
+    @keyframes fadeInLeft {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 7rem;
+      }
+      .hero img {
+        width: 260px;
+        height: 260px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<header>
-  <div class="brand">
-    <img src="images/echelon-logo.png" alt="Echelon Logo">
-    Echelon Fits
-  </div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="store.html">Store</a>
-    <a href="contact.html">Contact</a>
+    <div class="logo">
+      <img src="your-profile-image.jpg" alt="Echelon Logo" />
+      <span>Echelon Fits</span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Built for the Elite Within</h1>
-  <div class="hero-links">
-    <a href="coaching.html">1-on-1 Coaching</a>
-    <a href="group-training.html">Group Training</a>
-    <a href="online-elite.html">Online Elite</a>
-  </div>
-</div>
+  <section class="hero">
+    <img src="your-profile-image.jpg" alt="Profile Picture">
+    <div class="hero-content">
+      <h1>Built for the Elite Within</h1>
+      <p>Echelon Fits embodies precision, performance, and persistence. Designed for those who push beyond limits — where modern aesthetics meet athletic excellence.</p>
+      <a href="store.html">Shop Now</a>
+    </div>
+  </section>
 
-<!-- MAIN CONTENT -->
-<section>
-  <h2>Strength · Precision · Performance</h2>
-  <p>Welcome to Echelon Fits — a fusion of elite mindset, style, and performance. Every design and service we offer is built to elevate your journey in fitness and life.</p>
-  <div class="gallery">
-    <img src="images/gym2.jpg" alt="Training 1">
-    <img src="images/gym3.jpg" alt="Training 2">
-    <img src="images/gym4.jpg" alt="Training 3">
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  © 2025 Echelon Fits · Built for the Elite Within
-</footer>
-
+  <footer>
+    © 2025 Echelon Fits. All Rights Reserved.
+  </footer>
 </body>
 </html>
