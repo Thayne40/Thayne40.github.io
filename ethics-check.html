@@ -1,156 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethics Check | Echelon Fits</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background: #0a0a0a;
-      color: #f5f5f5;
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 60px;
-      backdrop-filter: blur(12px);
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 1000;
-    }
-
-    header img {
-      height: 50px;
-      margin-right: 10px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #00bfff;
-      letter-spacing: 1px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin-left: 30px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #f5f5f5;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #00bfff;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 160px auto 80px;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-      line-height: 1.8;
-    }
-
-    h1 {
-      text-align: center;
-      color: #00bfff;
-      font-size: 2rem;
-      margin-bottom: 25px;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-bottom: 18px;
-    }
-
-    em, strong {
-      color: #fff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      color: #888;
-      font-size: 0.9rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-      }
-
-      nav ul li {
-        margin: 10px 0;
-      }
-
-      main {
-        margin: 140px 20px 60px;
-        padding: 30px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ethics Check | Echelon Fits</title>
+<style>
+body{margin:0;font-family:'Poppins',sans-serif;background:#0a0a0a;color:#f5f5f5;}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 60px;background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);}
+header img{height:50px;margin-right:10px;}
+.brand{display:flex;align-items:center;font-weight:600;color:#00bfff;}
+nav ul{list-style:none;display:flex;margin:0;padding:0;}
+nav ul li{margin-left:30px;}
+nav ul li a{text-decoration:none;color:#f5f5f5;transition:color .3s;}
+nav ul li a:hover,nav ul li a.active{color:#00bfff;}
+main{max-width:900px;margin:160px auto 80px;padding:0 20px;line-height:1.8;}
+h1{text-align:center;color:#00bfff;}
+footer{text-align:center;padding:40px 0;color:#888;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);}
+</style>
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <img src="images/echelon-logo.png" alt="Echelon Fits Logo">
-      <span>Echelon Fits</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="store.html">Store</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="brand"><img src="images/echelon-logo.png" alt=""><span>Echelon Fits</span></div>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="ethics-check.html" class="active">Ethics Check</a></li>
+  </ul></nav>
+</header>
 
-  <main>
-    <h1>My Ethical Position on AI in Business</h1>
-
-    <p>Artificial Intelligence is one of the most powerful tools ever created for the business world, but like any tool, its impact depends entirely on the person using it. I view AI as something that's meant to refine your work, not replace it. It's not there to think for you or change how you operate. It's there to make your ideas more structured, efficient, and creative. The responsibility lies with the human behind the tool, not the tool itself.</p>
-
-    <p>In business, the three biggest ethical concerns surrounding AI are manipulation, bias, and dependency. Manipulation is dangerous because most people don't fully understand how AI works and can easily be deceived by false or misleading information. Bias becomes an issue when AI learns too much from one source and starts telling you only what you want to hear instead of what's actually true. Dependency is what concerns me most, because the more people rely on AI for thinking, the less they develop real creativity, logic, or discipline. AI should never become a crutch. It should support human effort, not replace it.</p>
-
-    <p>In my own business, I use AI to brainstorm design concepts, build website layouts, and refine technical ideas, but never to create the final product. Integrity means doing what's right even when no one's watching, and that includes being honest about how AI contributes to your work. It's still my responsibility to verify sources, check facts, and make sure what I create reflects my own effort and values. <em>Colossians 3:23</em> says, "<strong>Whatever you do, work at it with all your heart, as working for the Lord.</strong>" That means using technology with both excellence and honesty.</p>
-
-    <p>The most important biblical principle in business is truth. A successful and God-honoring business is built on honesty with customers, employees, and yourself. AI can enhance what we do, but it should never compromise who we are.</p>
-  </main>
-
-  <footer>
-    <p>© 2025 Echelon Fits | Built for the Elite Within</p>
-  </footer>
+<main>
+<h1>My Ethical Position on AI in Business</h1>
+<p>Artificial Intelligence is one of the most powerful tools ever created for the business world, but like any tool, its impact depends entirely on the person using it. I view AI as something that's meant to refine your work, not replace it. It's not there to think for you or change how you operate. It's there to make your ideas more structured, efficient, and creative. The responsibility lies with the human behind the tool, not the tool itself.</p>
+<p>In business, the three biggest ethical concerns surrounding AI are manipulation, bias, and dependency. Manipulation is dangerous because most people don't fully understand how AI works and can easily be deceived by false or misleading information. Bias becomes an issue when AI learns too much from one source and starts telling you only what you want to hear instead of what's actually true. Dependency is what concerns me most, because the more people rely on AI for thinking, the less they develop real creativity, logic, or discipline. AI should never become a crutch. It should support human effort, not replace it.</p>
+<p>In my own business, I use AI to brainstorm design concepts, build website layouts, and refine technical ideas, but never to create the final product. Integrity means doing what's right even when no one's watching, and that includes being honest about how AI contributes to your work. It's still my responsibility to verify sources, check facts, and make sure what I create reflects my own effort and values. <em>Colossians 3:23</em> says, "<strong>Whatever you do, work at it with all your heart, as working for the Lord.</strong>" That means using technology with both excellence and honesty.</p>
+<p>The most important biblical principle in business is truth. A successful and God-honoring business is built on honesty with customers, employees, and yourself. AI can enhance what we do, but it should never compromise who we are.</p>
+</main>
+<footer><p>© 2025 Echelon Fits | Built for the Elite Within</p></footer>
 </body>
 </html>
