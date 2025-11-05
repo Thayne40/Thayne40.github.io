@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>About | Echelon Fits</title>
+<link rel="icon" href="images/echelon-logo.png">
 <style>
-/* identical global style as index */
-body{margin:0;font-family:'Poppins',sans-serif;background:#0a0a0a;color:#f5f5f5;}
-header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 60px;background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);z-index:1000;}
-header img{height:50px;margin-right:10px;}
-.brand{display:flex;align-items:center;font-weight:600;color:#00bfff;letter-spacing:1px;}
-nav ul{list-style:none;display:flex;margin:0;padding:0;}
-nav ul li{margin-left:30px;}
-nav ul li a{text-decoration:none;color:#f5f5f5;font-weight:500;transition:color .3s;}
-nav ul li a:hover,nav ul li a.active{color:#00bfff;}
-main{max-width:900px;margin:160px auto 80px;padding:0 20px;line-height:1.8;}
-footer{text-align:center;padding:40px 0;color:#888;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);}
+:root{--bg:#1C1C1E;--panel:#2A2A2E;--text:#F7F7F7;--muted:#C7C7CC;--rose:#B76E79;--blush:#F4D9DE}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px 54px;background:rgba(20,20,22,.55);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--rose);font-weight:600}
+.brand img{height:46px}
+nav ul{list-style:none;display:flex;gap:28px}
+nav a{color:var(--text);opacity:.9;text-decoration:none}
+nav a:hover{color:var(--rose);opacity:1}
+nav a.active{color:var(--rose)}
+main{max-width:950px;margin:140px auto 72px;padding:0 22px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:36px 28px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+h1{text-align:center;color:var(--blush);margin-bottom:14px}
+.lead{color:var(--muted);text-align:center;margin-bottom:22px}
+footer{border-top:1px solid rgba(255,255,255,.06);color:var(--muted);text-align:center;padding:40px 18px}
+@media (max-width:768px){header{padding:12px 20px}nav ul{gap:16px;flex-wrap:wrap}main{margin:122px 0 62px}}
 </style>
 </head>
 <body>
@@ -31,11 +36,14 @@ footer{text-align:center;padding:40px 0;color:#888;font-size:.9rem;border-top:1p
 </header>
 
 <main>
-  <h1 style="color:#00bfff;text-align:center;">About Echelon Fits</h1>
-  <p>Echelon Fits is built on discipline, growth, and perseverance. We believe in creating apparel that pushes you beyond your limits while reminding you that you’re built for more.</p>
-  <p>Our mission is to inspire the elite within every individual — to help people chase excellence through hard work, commitment, and truth.</p>
+  <div class="card">
+    <h1>About Echelon Fits</h1>
+    <p class="lead">A luxury-motivational brand blending discipline with design.</p>
+    <p>Echelon Fits is built on growth, grit, and perseverance. We craft apparel and experiences that push you beyond your limits while keeping a refined, modern aesthetic — pink/gray with rose-gold accents.</p>
+    <p>Our mission is to draw out the elite within every person through excellence, honesty, and relentless consistency.</p>
+  </div>
 </main>
 
-<footer><p>© 2025 Echelon Fits | Built for the Elite Within</p></footer>
+<footer>© 2025 Echelon Fits | Built for the Elite Within</footer>
 </body>
 </html>
