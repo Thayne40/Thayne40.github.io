@@ -5,41 +5,250 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>1-on-1 Coaching | Echelon Fits</title>
 <style>
-body{margin:0;font-family:"Montserrat",Arial,sans-serif;background:#f4f1f2;color:#222;text-align:center;}
-header{position:sticky;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.75);backdrop-filter:blur(10px);box-shadow:0 2px 8px rgba(0,0,0,0.1);padding:10px 5%;z-index:1000;}
-header img{height:40px;margin-right:10px;vertical-align:middle;}
-.brand{display:flex;align-items:center;font-weight:bold;color:#e88cae;font-size:1.3rem;}
-nav a{margin:0 10px;color:#333;text-decoration:none;font-weight:600;transition:color .3s;}
-nav a:hover{color:#e88cae;}
-.banner{height:25vh;background:url('images/gym12.jpg') center/cover no-repeat;position:relative;}
-.banner::after{content:"";background:url('images/echelon-logo.png') center/contain no-repeat;opacity:.1;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60%;height:60%;}
-section{padding:40px 10%;max-width:800px;margin:auto;line-height:1.6;}
-h1{color:#e88cae;margin-top:25px;}
-.gallery{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin-top:20px;}
-.gallery img{width:230px;height:150px;object-fit:cover;border-radius:10px;transition:transform .3s,box-shadow .3s;}
-.gallery img:hover{transform:scale(1.03);box-shadow:0 4px 10px rgba(0,0,0,.15);}
-.btn{display:inline-block;margin-top:20px;background:rgba(232,140,174,.3);color:#222;padding:10px 20px;border-radius:25px;text-decoration:none;transition:all .3s;}
-.btn:hover{background:rgba(232,140,174,.6);transform:scale(1.05);}
-footer{background:#fff;text-align:center;color:#777;padding:20px 0;font-size:.9rem;position:relative;margin-top:40px;}
-footer::before{content:"";background:url('images/echelon-logo.png') center/contain no-repeat;opacity:.08;position:absolute;top:50%;left:50%;width:200px;height:200px;transform:translate(-50%,-50%);}
+body{
+  margin:0;
+  font-family:"Montserrat",Arial,sans-serif;
+  background:#f4f1f2;
+  color:#222;
+  text-align:center;
+}
+header{
+  position:sticky;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  padding:10px 5%;
+  z-index:1000;
+}
+header img{
+  height:40px;
+  margin-right:10px;
+  vertical-align:middle;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  font-weight:bold;
+  color:#e88cae;
+  font-size:1.3rem;
+}
+nav a{
+  margin:0 10px;
+  color:#333;
+  text-decoration:none;
+  font-weight:600;
+  transition:color .3s;
+}
+nav a:hover{
+  color:#e88cae;
+}
+nav a.active{
+  color:#e88cae;
+}
+.banner{
+  height:25vh;
+  background:url('images/gym12.jpg') center/cover no-repeat;
+  position:relative;
+}
+.banner::after{
+  content:"";
+  background:url('images/echelon-logo.png') center/contain no-repeat;
+  opacity:.1;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:60%;
+  height:60%;
+}
+main{
+  padding:20px 0 40px;
+}
+section{
+  padding:20px 10%;
+  max-width:900px;
+  margin:auto;
+  line-height:1.7;
+  text-align:left;
+}
+h1{
+  color:#e88cae;
+  margin:25px auto 10px;
+  text-align:center;
+}
+h2{
+  color:#333;
+  margin-top:25px;
+  margin-bottom:8px;
+  font-size:1.3rem;
+}
+p{
+  margin:8px 0;
+}
+ul,ol{
+  margin:8px 0 10px 20px;
+}
+.gallery{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:20px;
+}
+.gallery img{
+  width:230px;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:transform .3s,box-shadow .3s;
+}
+.gallery img:hover{
+  transform:scale(1.03);
+  box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  background:rgba(232,140,174,.3);
+  color:#222;
+  padding:10px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  transition:all .3s;
+  font-weight:600;
+}
+.btn:hover{
+  background:rgba(232,140,174,.6);
+  transform:scale(1.05);
+}
+footer{
+  background:#fff;
+  text-align:center;
+  color:#777;
+  padding:20px 0;
+  font-size:.9rem;
+  position:relative;
+  margin-top:20px;
+}
+footer::before{
+  content:"";
+  background:url('images/echelon-logo.png') center/contain no-repeat;
+  opacity:.08;
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:200px;
+  height:200px;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+.footer-inner{
+  position:relative;
+  z-index:1;
+}
+.small-note{
+  font-size:0.8rem;
+  color:#555;
+}
 </style>
 </head>
 <body>
 <header>
-  <div class="brand"><img src="images/echelon-logo.png" alt="Echelon Logo">Echelon Fits</div>
-  <nav>
-    <a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="contact.html">Contact</a>
+  <div class="brand">
+    <img src="images/echelon-logo.png" alt="Echelon Fits logo">
+    Echelon Fits
+  </div>
+  <nav aria-label="Main site navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+    <a href="contact.html">Contact</a>
+    <a href="coaching.html" class="active">Coaching</a>
   </nav>
 </header>
-<div class="banner"></div>
-<h1>1-on-1 Coaching</h1>
-<section>
-<p>Personalized sessions tailored to your goals. Our elite trainers build structured programs to maximize performance, recovery, and confidence.</p>
-<div class="gallery">
-  <img src="images/gym1.jpg" alt="Coaching 1"><img src="images/gym2.jpg" alt="Coaching 2">
-</div>
-<a href="thank-you.html" class="btn">Start Training</a>
-</section>
-<footer>© 2025 Echelon Fits · Built for the Elite Within</footer>
+
+<div class="banner" role="img" aria-label="Gym environment representing focused strength training"></div>
+
+<main>
+  <h1>1-on-1 Coaching</h1>
+
+  <section aria-labelledby="intro-heading">
+    <h2 id="intro-heading">Audience &amp; Purpose</h2>
+    <p>
+      This page is designed for individuals who want structured, personalized fitness coaching.
+      Its purpose is to explain the 1-on-1 Echelon Fits coaching offer, highlight the benefits,
+      and give clear next steps for getting started.
+    </p>
+  </section>
+
+  <section aria-labelledby="service-heading">
+    <h2 id="service-heading">What You Get with Echelon Fits Coaching</h2>
+    <p>
+      Echelon Fits coaching is built for people who are ready to train with intention instead of guessing.
+      Each plan is created around your schedule, goals, and current level so you can make steady,
+      measurable progress.
+    </p>
+    <ul>
+      <li><strong>Customized weekly training sessions</strong> tailored to your goals and equipment.</li>
+      <li><strong>Structured programming</strong> that balances strength, performance, and recovery.</li>
+      <li><strong>Technique feedback</strong> through form checks to keep you safe and efficient.</li>
+      <li><strong>Simple nutrition guidance</strong> that supports your training without being extreme.</li>
+      <li><strong>Consistent accountability</strong> through check-ins and adjustments as you improve.</li>
+    </ul>
+
+    <div class="gallery" aria-label="Gym and coaching example images">
+      <img src="images/gym1.jpg" alt="Athlete training with focus under guidance">
+      <img src="images/gym2.jpg" alt="Strength training setup in the gym">
+    </div>
+
+    <a href="thank-you.html" class="btn">Start Your Coaching Process</a>
+  </section>
+
+  <section aria-labelledby="who-heading">
+    <h2 id="who-heading">Who This Coaching Is For</h2>
+    <p>This 1-on-1 coaching is a strong fit if you:</p>
+    <ul>
+      <li>Want a clear plan instead of walking into the gym guessing what to do.</li>
+      <li>Balance training with school, work, sports, or a busy schedule.</li>
+      <li>Care about doing exercises with correct form and building confidence under the bar.</li>
+      <li>Are ready to show up, stay consistent, and be held accountable.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="steps-heading">
+    <h2 id="steps-heading">Next Steps: How to Get Started</h2>
+    <ol>
+      <li>Fill out a brief intake form so coaching can be tailored to your goals and schedule.</li>
+      <li>Schedule a short intro call to confirm expectations and ask questions.</li>
+      <li>Receive your personalized program and walkthrough within 48 hours.</li>
+      <li>Begin training with weekly check-ins and ongoing adjustments as you progress.</li>
+    </ol>
+    <p>
+      <strong>Example of use:</strong> This page functions as the main service page for Echelon Fits
+      1-on-1 coaching and is what potential clients see when deciding whether to begin training.
+    </p>
+  </section>
+
+  <section aria-labelledby="sources-heading">
+    <h2 id="sources-heading">Sources &amp; AI Disclosure</h2>
+    <p><strong>Sources used:</strong> No external sources were used for this page.</p>
+    <p class="small-note">
+      <strong>AI assistance disclosure:</strong> The content on this page was created with assistance
+      from AI and then edited to match the Echelon Fits voice, brand, and coaching philosophy.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2025 Echelon Fits · Built for the Elite Within</div>
+    <div class="small-note">COMM 339 · Portfolio Artifact 1 · Online Coaching Service Page</div>
+  </div>
+</footer>
 </body>
 </html>
