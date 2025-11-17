@@ -24,6 +24,7 @@
       text-align: center;
     }
 
+    /* HEADER */
     header {
       background-color: rgba(30, 30, 32, 0.65);
       backdrop-filter: blur(12px);
@@ -67,6 +68,7 @@
       opacity: 1;
     }
 
+    /* MAIN */
     section {
       padding: 40px 20px;
       max-width: 900px;
@@ -97,6 +99,7 @@
       text-decoration: underline;
     }
 
+    /* SOCIAL ICONS */
     .social-links {
       display: flex;
       justify-content: center;
@@ -117,6 +120,7 @@
       opacity: 0.85;
     }
 
+    /* ARTIFACT PANEL */
     .artifact-panel {
       background: var(--panel);
       border: 1px solid rgba(255,255,255,0.06);
@@ -153,6 +157,7 @@
       margin: 10px 0 15px 20px;
     }
 
+    /* FOOTER */
     footer {
       margin-top: 60px;
       padding: 20px;
@@ -167,6 +172,7 @@
 
 <body>
 
+  <!-- HEADER -->
   <header>
     <div class="logo-title">
       <img src="images/echelon-logo.png" alt="Echelon Fits Logo">
@@ -181,6 +187,7 @@
     </nav>
   </header>
 
+  <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Contact Me</h2>
 
@@ -189,20 +196,68 @@
       <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
 
       <div class="social-links">
-        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+        <!-- Change these href values later to your real profile URLs -->
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+          <img src="images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">
+          <img src="images/youtube.png" alt="YouTube">
+        </a>
       </div>
     </div>
 
+    <!-- ARTIFACT 2 PANEL (restored) -->
     <div class="artifact-panel">
-      <!-- ARTIFACT CONTENT (unchanged) -->
-      <!-- ... -->
+      <h3>Artifact 2 — Email & Memo Pack</h3>
+
+      <p>
+        This artifact includes two versions of a message announcing the launch of Echelon Fits 1-on-1 Coaching,
+        adapted for two distinct audiences.
+      </p>
+
+      <h4>Version 1 — Public Email</h4>
+      <p><strong>Subject:</strong> Your Next Level Starts Now — Introducing Echelon Fits Coaching</p>
+      <p>
+        Hello,<br><br>
+        If you're ready to train with structure and intention, Echelon Fits is now offering 1-on-1 coaching.
+        Weekly custom programming, form feedback, accountability check-ins, and realistic nutrition guidance
+        come together to help you progress with consistency.<br><br>
+        — Garner
+      </p>
+
+      <h4>Version 2 — Internal Memo</h4>
+      <p>
+        <strong>To:</strong> Echelon Fits Team<br>
+        <strong>From:</strong> Garner Gauthier<br>
+        <strong>Subject:</strong> Coaching Launch Overview
+      </p>
+
+      <ul>
+        <li>Purpose: Expand Echelon Fits into structured coaching.</li>
+        <li>Audience: Individuals wanting disciplined, goal-driven training.</li>
+        <li>Next steps: Updated branding, website coaching page, rollout content.</li>
+      </ul>
+
+      <h4>Rationale</h4>
+      <p>
+        The public email uses motivating tone; the internal memo focuses on operations and alignment.
+      </p>
+
+      <h4>AI Disclosure</h4>
+      <p>
+        This content was created with AI assistance and edited to reflect my voice and communication style.
+      </p>
     </div>
 
   </section>
 
+  <!-- FOOTER -->
   <footer>
     © 2025 Echelon Fits. Built for the Elite Within.
   </footer>
