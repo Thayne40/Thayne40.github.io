@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Ethics Check | Echelon Fits</title>
 <link rel="icon" href="images/echelon-logo.png">
+
 <style>
-:root{--bg:#1C1C1E;--panel:#2A2A2E;--text:#F7F7F7;--muted:#C7C7CC;--rose:#B76E79;--blush:#F4D9DE}
+:root {
+  --bg:#1C1C1E;
+  --panel:#2A2A2E;
+  --text:#F7F7F7;
+  --muted:#C7C7CC;
+  --rose:#B76E79;
+  --blush:#F4D9DE;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
-header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px 54px;background:rgba(20,20,22,.55);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
+body{
+  font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.8;
+}
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 54px;
+  background:rgba(20,20,22,.55);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
 .brand{display:flex;align-items:center;gap:10px;color:var(--rose);font-weight:600}
 .brand img{height:46px}
 nav ul{list-style:none;display:flex;gap:28px}
@@ -16,34 +37,78 @@ nav a{color:var(--text);opacity:.9;text-decoration:none}
 nav a:hover{color:var(--rose);opacity:1}
 nav a.active{color:var(--rose)}
 main{max-width:950px;margin:140px auto 72px;padding:0 22px}
-.article{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:34px 26px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+
+/* Card panel */
+.article{
+  background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:34px 26px;
+  margin-bottom:40px;
+  box-shadow:0 6px 24px rgba(0,0,0,.35);
+}
+
 h1{text-align:center;color:var(--blush);margin-bottom:14px}
-.article p{margin-bottom:14px;color:#EFEFF0}
-em{color:#fff} strong{color:#fff}
-footer{border-top:1px solid rgba(255,255,255,.06);color:var(--muted);text-align:center;padding:40px 18px}
-@media (max-width:768px){header{padding:12px 20px}nav ul{gap:16px;flex-wrap:wrap}main{margin:122px 0 62px}}
+h2{text-align:left;color:var(--blush);margin:10px 0 16px;font-size:24px}
+p{color:#EFEFF0;margin-bottom:14px}
+em,strong{color:#fff}
+
+footer{
+  border-top:1px solid rgba(255,255,255,.06);
+  color:var(--muted);
+  text-align:center;
+  padding:40px 18px;
+}
 </style>
 </head>
+
 <body>
 <header>
-  <div class="brand"><img src="images/echelon-logo.png" alt=""><span>Echelon Fits</span></div>
-  <nav><ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="store.html">Store</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="ethics-check.html" class="active">Ethics Check</a></li>
-  </ul></nav>
+  <div class="brand">
+    <img src="images/echelon-logo.png" alt="">
+    <span>Echelon Fits</span>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="ethics-check.html" class="active">Ethics Check</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
+
+  <!-- ORIGINAL ETHICS CHECK (kept exactly as-is) -->
   <article class="article">
     <h1>My Ethical Position on AI in Business</h1>
     <p>Artificial Intelligence is one of the most powerful tools ever created for the business world, but like any tool, its impact depends entirely on the person using it. I view AI as something that's meant to refine your work, not replace it. It's not there to think for you or change how you operate. It's there to make your ideas more structured, efficient, and creative. The responsibility lies with the human behind the tool, not the tool itself.</p>
+
     <p>In business, the three biggest ethical concerns surrounding AI are manipulation, bias, and dependency. Manipulation is dangerous because most people don't fully understand how AI works and can easily be deceived by false or misleading information. Bias becomes an issue when AI learns too much from one source and starts telling you only what you want to hear instead of what's actually true. Dependency is what concerns me most, because the more people rely on AI for thinking, the less they develop real creativity, logic, or discipline. AI should never become a crutch. It should support human effort, not replace it.</p>
+
     <p>In my own business, I use AI to brainstorm design concepts, build website layouts, and refine technical ideas, but never to create the final product. Integrity means doing what's right even when no one's watching, and that includes being honest about how AI contributes to your work. It's still my responsibility to verify sources, check facts, and make sure what I create reflects my own effort and values. <em>Colossians 3:23</em> says, "<strong>Whatever you do, work at it with all your heart, as working for the Lord.</strong>" That means using technology with both excellence and honesty.</p>
+
     <p>The most important biblical principle in business is truth. A successful and God-honoring business is built on honesty with customers, employees, and yourself. AI can enhance what we do, but it should never compromise who we are.</p>
   </article>
+
+  <!-- NEW ETHICS CHECK 3 (ADDED) -->
+  <article class="article">
+    <h1>Ethics Check 3 — Privacy, Consent, and Loving My Neighbor</h1>
+
+    <p>As a fitness coach and business builder, I work with a lot of private client information. Health details, measurements, progress photos, personal goals, struggles they're dealing with—these things are deeply personal and connected to someone's physical, emotional, and even spiritual well-being. Because of that, I believe it's important to see client information as something that requires careful protection, not something I should casually upload into an AI tool just because it might make my work a little easier or more efficient.</p>
+
+    <p>I've set some clear boundaries for myself when it comes to using AI. There are several things I will never include: client names, personal identifiers, photos, medical or injury history, private conversations, or anything that would allow someone to recognize who the person is. Even if AI makes certain tasks faster or simpler, that doesn't remove my responsibility to protect the people who trust me with their information. When I need help creating a workout idea, rewriting content, or structuring a program, I keep everything anonymous and use general placeholders like "Client A" or "athlete with a strength goal."</p>
+
+    <p>If there's ever a situation where using real details would genuinely help the client—for example, if I'm analyzing a training plan that's connected to a specific injury—I will get direct, written consent first. I'll clearly explain what I need, how their information will be anonymized, and why I'm using AI in the first place. My goal is to keep the process respectful, transparent, and protective of the client's dignity.</p>
+
+    <p>The principle guiding how I handle privacy comes from the idea of loving your neighbor as yourself. To me, that means respecting their privacy, protecting their story, and treating their data the same way I would want mine treated. If I wouldn't want my own fitness information uploaded somewhere without my permission, then I won't do it to someone else.</p>
+
+    <p>One real risk with AI is that prompts may be stored or used to train future models, which creates the possibility of private data being saved in ways I can't control. My approach to dealing with that risk is straightforward: anonymize everything, never upload sensitive information, get consent when it's needed, and assume that anything I type could persist somewhere permanently. This way, I'm protecting my clients, honoring my values, and keeping my work aligned with the integrity I want to maintain in everything I do.</p>
+  </article>
+
 </main>
 
 <footer>© 2025 Echelon Fits | Built for the Elite Within</footer>
